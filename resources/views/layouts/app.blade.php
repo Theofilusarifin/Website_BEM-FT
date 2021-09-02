@@ -47,6 +47,7 @@
                 </div> 
             </header>
 
+			
             @yield('content')
 
             <!-- Scroll Top Button -->

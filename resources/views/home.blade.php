@@ -1,84 +1,85 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="theme-main-banner" class="banner-one">
-				<div data-src="{{ asset('bemft_assets/images/home/slide-5.jpg') }}">
-					<div class="camera_caption">
-						<div class="container">
-							<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
-							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
-							<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
-						</div> <!-- /.container -->
-					</div> <!-- /.camera_caption -->
-				</div>
-				<div data-src="{{ asset('bemft_assets/images/home/slide-3.jpg') }}">
-					<div class="camera_caption">
-						<div class="container">
-							<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
-							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
-							<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
-						</div> <!-- /.container -->
-					</div> <!-- /.camera_caption -->
-				</div>
-				<div data-src="{{ asset('bemft_assets/images/home/slide-1.jpg') }}">
-					<div class="camera_caption">
-						<div class="container">
-							<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
-							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
-							<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
-						</div> <!-- /.container -->
-					</div> <!-- /.camera_caption -->
-				</div>
-			</div> <!-- /#theme-main-banner -->
+	<div id="theme-main-banner" class="banner-one">
+		<div data-src="{{ asset('bemft_assets/images/home/slide-5.jpg') }}">
+			<div class="camera_caption">
+				<div class="container">
+					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
+					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
+					<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+				</div> <!-- /.container -->
+			</div> <!-- /.camera_caption -->
+		</div>
+		<div data-src="{{ asset('bemft_assets/images/home/slide-3.jpg') }}">
+			<div class="camera_caption">
+				<div class="container">
+					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
+					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
+					<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+				</div> <!-- /.container -->
+			</div> <!-- /.camera_caption -->
+		</div>
+		<div data-src="{{ asset('bemft_assets/images/home/slide-1.jpg') }}">
+			<div class="camera_caption">
+				<div class="container">
+					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
+					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
+					<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+				</div> <!-- /.container -->
+			</div> <!-- /.camera_caption -->
+		</div>
+	</div> <!-- /#theme-main-banner -->
 			
 			
-			<!-- 
-			=============================================
-				CallOut Banner 
-			============================================== 
-			-->
-			<div class="callout-banner section-spacing">
-				<div class="container clearfix">
-					<h3 class="title">Provide solutions for the realiable growth</h3>
-					<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to ever wondered the east side to a deluxe apartment.</p>
-					<a href="#" class="theme-button-one">FREE QUOTES</a>
-				</div>
-			</div> <!-- /.callout-banner -->
+	<!-- 
+	=============================================
+		CallOut Banner 
+	============================================== 
+	-->
+	<div class="callout-banner section-spacing">
+		<div class="container clearfix">
+			<h3 class="title">Provide solutions for the realiable growth</h3>
+			<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to ever wondered the east side to a deluxe apartment.</p>
+			<a href="#" class="theme-button-one">FREE QUOTES</a>
+		</div>
+	</div> <!-- /.callout-banner -->
 
-            {{-- DIVISI --}}
-            <div class="top-feature section-spacing">
-				<div class="top-features-slide">
-					<div class="item">
-						<div class="main-content" style="background:#fafafa;">
-							<img src="images/icon/1.png" alt="">
-							<h4><a href="#">BPH</a></h4>
-							<p>The east side to a deluxe apartment in move on up to the east side</p>
-						</div> <!-- /.main-content -->
-					</div> <!-- /.item -->
-					<div class="item">
-						<div class="main-content" style="background:#f6f6f6;">
-							<img src="images/icon/2.png" alt="">
-							<h4><a href="#">AD</a></h4>
-							<p>The east side to a deluxe apartment in move on up to the east side</p>
-						</div> <!-- /.main-content -->
-					</div> <!-- /.item -->
-					<div class="item">
-						<div class="main-content" style="background:#efefef;">
-							<img src="images/icon/3.png" alt="">
-							<h4><a href="#">HRD</a></h4>
-							<p>The east side to a deluxe apartment in move on up to the east side</p>
-						</div> <!-- /.main-content -->
-					</div> <!-- /.item -->
-					<div class="item">
-						<div class="main-content" style="background:#e9e9e9;">
-							<img src="images/icon/4.png" alt="">
-							<h4><a href="#">IDD</a></h4>
-							<p>The east side to a deluxe apartment in move on up to the east side</p>
-						</div> <!-- /.main-content -->
-					</div> <!-- /.item -->
-				</div> <!-- /.top-features-slide -->
-			</div> <!-- /.top-feature -->
-
+	<div>
+		{{-- DIVISI --}}
+		<div class="top-feature section-spacing">
+			<div class="top-features-slide">
+				<div class="item">
+					<div class="main-content" style="background:#fafafa;">
+						<img src="images/icon/1.png" alt="">
+						<h4><a href="#">BPH</a></h4>
+						<p>The east side to a deluxe apartment in move on up to the east side</p>
+					</div> <!-- /.main-content -->
+				</div> <!-- /.item -->
+				<div class="item">
+					<div class="main-content" style="background:#f6f6f6;">
+						<img src="images/icon/2.png" alt="">
+						<h4><a href="#">AD</a></h4>
+						<p>The east side to a deluxe apartment in move on up to the east side</p>
+					</div> <!-- /.main-content -->
+				</div> <!-- /.item -->
+				<div class="item">
+					<div class="main-content" style="background:#efefef;">
+						<img src="images/icon/3.png" alt="">
+						<h4><a href="#">HRD</a></h4>
+						<p>The east side to a deluxe apartment in move on up to the east side</p>
+					</div> <!-- /.main-content -->
+				</div> <!-- /.item -->
+				<div class="item">
+					<div class="main-content" style="background:#e9e9e9;">
+						<img src="images/icon/4.png" alt="">
+						<h4><a href="#">IDD</a></h4>
+						<p>The east side to a deluxe apartment in move on up to the east side</p>
+					</div> <!-- /.main-content -->
+				</div> <!-- /.item -->
+			</div> <!-- /.top-features-slide -->
+		</div> <!-- /.top-feature -->
+</div>
 			<!-- 
 			=============================================
 				About Company Stye Two
@@ -123,109 +124,65 @@
 				</div> <!-- /.overlay -->
 			</div> <!-- /.about-compnay-two -->
 
-
-			<!-- 
+	<!-- 
 			=============================================
-				Our Case
+				Our Solution
 			============================================== 
 			-->
-			<div class="our-case section-spacing">
+			<div class="our-solution section-spacing">
 				<div class="container">
 					<div class="theme-title-one">
-						<h2>Our CASES</h2>
-						<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers</p>
+						<h2>Our SOLUTIONS</h2>
 					</div> <!-- /.theme-title-one -->
 					<div class="wrapper">
 						<div class="row">
 							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="images/portfolio/1.jpg" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
+								<div class="single-solution-block">
+									<img src="{{ asset('bemft_assets/images/icon/5.png') }}" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
 							</div> <!-- /.col- -->
 							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="images/portfolio/2.jpg" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
+								<div class="single-solution-block">
+									<img src="{{ asset('bemft_assets/images/icon/6.png') }}" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
 							</div> <!-- /.col- -->
 							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="images/portfolio/3.jpg" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
+								<div class="single-solution-block">
+									<img src="{{ asset('bemft_assets/images/icon/7.png') }}" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
 							</div> <!-- /.col- -->
 							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="images/portfolio/4.jpg" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
+								<div class="single-solution-block">
+									<img src="{{ asset('bemft_assets/images/icon/8.png') }}" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
 							</div> <!-- /.col- -->
 							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="images/portfolio/5.jpg" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
+								<div class="single-solution-block">
+									<img src="{{ asset('bemft_assets/images/icon/9.png') }}" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
 							</div> <!-- /.col- -->
 							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="images/portfolio/6.jpg" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
+								<div class="single-solution-block">
+									<img src="{{ asset('bemft_assets/images/icon/10.png') }}" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
 							</div> <!-- /.col- -->
 						</div> <!-- /.row -->
 					</div> <!-- /.wrapper -->
-					<div class="view-all"><a href="project.html" class="theme-button-one">VIEW ALL</a></div>
 				</div> <!-- /.container -->
-			</div> <!-- /.our-case -->
+			</div> <!-- /.our-solution -->
+			
 
 
 			<!--
@@ -393,7 +350,7 @@
 								<div class="item">
 									<div class="single-blog">
 										<div class="image-box">
-											<img src="images/blog/3.jpg" alt="">
+											<img src="{{ asset('bemft_assets/images/blog/3.jpg') }}" alt="">
 											<div class="overlay"><a href="#" class="date">Feb 06, 2018</a></div>
 										</div> <!-- /.image-box -->
 										<div class="post-meta">
@@ -405,7 +362,7 @@
 								<div class="item">
 									<div class="single-blog">
 										<div class="image-box">
-											<img src="images/blog/4.jpg" alt="">
+											<img src="{{ asset('bemft_assets/images/blog/4.jpg') }}" alt="">
 											<div class="overlay"><a href="#" class="date">Mar 30, 2018</a></div>
 										</div> <!-- /.image-box -->
 										<div class="post-meta">
@@ -417,7 +374,7 @@
 								<div class="item">
 									<div class="single-blog">
 										<div class="image-box">
-											<img src="images/blog/5.jpg" alt="">
+											<img src="{{ asset('bemft_assets/images/blog/5.jpg') }}" alt="">
 											<div class="overlay"><a href="#" class="date">Apr 14, 2018</a></div>
 										</div> <!-- /.image-box -->
 										<div class="post-meta">
