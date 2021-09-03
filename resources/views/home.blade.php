@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 	<div id="theme-main-banner" class="banner-one">
 		<div data-src="{{ asset('bemft_assets/images/home/slide-5.jpg') }}">
 			<div class="camera_caption">
