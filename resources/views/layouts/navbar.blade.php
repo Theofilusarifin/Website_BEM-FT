@@ -13,7 +13,7 @@
                         <li><a href="{{ route('idd') }}">IDD</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Proker</a></li>
+                <li><a href="#">Event Terkini</a></li>
                 <li><a href="#">Profil Ormawa FT</a></li>
                 <li><a href="{{ route('galeri') }}">Galeri</a></li>
         </ul>

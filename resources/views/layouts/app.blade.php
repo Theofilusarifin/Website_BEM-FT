@@ -50,6 +50,7 @@
 			
             @yield('content')
 
+			@include('layouts.footer')
             <!-- Scroll Top Button -->
 			<button class="scroll-top tran3s">
 				<i class="fa fa-angle-up" aria-hidden="true"></i>
