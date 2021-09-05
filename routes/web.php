@@ -5,13 +5,18 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home')->name('beranda');
-Route::view('/divisi/BPH', 'divisi.bph')->name('bph');
-Route::view('/divisi/AD', 'divisi.ad')->name('ad');
-Route::view('/divisi/HRD', 'divisi.hrd')->name('hrd');
-Route::view('/divisi/IDD', 'divisi.idd')->name('idd');
+Route::view('/BPH', 'divisi.bph')->name('bph');
+Route::view('/AD', 'divisi.ad')->name('ad');
+Route::view('/HRD', 'divisi.hrd')->name('hrd');
+Route::view('/IDD', 'divisi.idd')->name('idd');
+
+Route::view('/profil/ormawa', 'ormawa.index')->name('ormawa');
+Route::view('/profil/ormawa/{nama}', 'ormawa.show')->name('ormawa.show');
 
 Route::get('/galeri', 'GaleriController@index')->name('galeri');
 Route::get('/galeri/{nama}', 'GaleriController@show')->name('galeri.show');
+
+Route::view('/event', 'kalender')->name('event');
 
 Auth::routes();
 

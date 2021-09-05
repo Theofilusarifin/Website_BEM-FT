@@ -299,7 +299,4 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Google Map -->
-	<div class="google-map-one"><div class="map-canvas"></div></div>
 @endsection

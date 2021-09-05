@@ -1,10 +1,15 @@
+<!-- Google Map -->
+<div class="google-map-one d-none">
+    <div class="map-canvas"></div>
+</div>
+
 <footer class="theme-footer-two">
     <div class="top-footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-sm-6 col-12 logo-widget">
                     <h6 class="title text-center mb-4">#Satusinergi Beraniberaksi</h6>
-                    <div class="logo text-center"><a href="index.html"><img src="{{ asset('bemft_assets/images/logo/logo_bemft_white.png') }}" alt="Logo BEM-FT Ubaya"></a></div>
+                    <div class="logo text-center mt-4"><a href="{{ route('beranda') }}"><img src="{{ asset('bemft_assets/images/logo/logo_bemft_white.png') }}" alt="Logo BEM-FT Ubaya"></a></div>
                 </div>
                 <div class="col-lg-2 col-sm-6 col-12 footer-list"></div>
                 <div class="col-lg-3 col-sm-6 col-12 footer-list">
