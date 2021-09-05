@@ -51,7 +51,7 @@
 				<div class="main-content" style="background:#fafafa; height: 50vh; width:100%; max-height:100%">
 					<img src="{{ asset('bemft_assets/images/hrd.png') }}" alt="BPH">
 					<h4><a href="{{ route('bph') }}">BPH</a></h4>
-					<p>Pengurus inti BEM Fakultas Teknik</p>
+					<p style="text-align: justify;">Pengurus inti BEM Fakultas Teknik</p>
 				</div> 
 			</div> 
 			
@@ -59,7 +59,7 @@
 				<div class="main-content" style="background:#f6f6f6; height: 50vh; width:100%; max-height:100%">
 					<img src="{{ asset('bemft_assets/images/ad.png') }}" alt="AD">
 					<h4><a href="{{ route('ad') }}">AD</a></h4>
-					<p>Mengurus segala urusan administrasi ormawa Fakultas Teknik. Urusan administrasi berupa pengauditan proposal dan laporan pertanggung-jawaban.</p>
+					<p style="text-align: justify;">Mengurus segala urusan administrasi ormawa Fakultas Teknik. Urusan administrasi berupa pengauditan proposal dan laporan pertanggung-jawaban.</p>
 				</div> 
 			</div> 
 			
@@ -67,7 +67,7 @@
 				<div class="main-content" style="background:#efefef; height: 50vh; width:100%; max-height:100%">
 					<img src="{{ asset('bemft_assets/images/hrd.png') }}" alt="HRD">
 					<h4><a href="{{ route('hrd') }}">HRD</a></h4>
-					<p>Menjaga hubungan antar internal dan eksternal BEM Fakultas Teknik. Mulai dari menyiapkan acara - acara bonding internal hingga membuat kegiatan dengan pihak luar BEM Fakultas Teknik.</p>
+					<p style="text-align: justify;">Menjaga hubungan antar internal dan eksternal BEM Fakultas Teknik. Mulai dari menyiapkan acara - acara bonding internal hingga membuat kegiatan dengan pihak luar BEM Fakultas Teknik.</p>
 				</div> 
 			</div> 
 			
@@ -75,7 +75,7 @@
 				<div class="main-content" style="background:#e9e9e9; height: 50vh; width:100%; max-height:100%">
 					<img src="{{ asset('bemft_assets/images/idd.png') }}" alt="IDD">
 					<h4><a href="{{ route('idd') }}">IDD</a></h4>
-					<p>Menyalurkan informasi dan menjada sarana publikasi serta melakukan rekam jejak kegiatan BEM Fakultas Teknik.</p>
+					<p style="text-align: justify;">Menyalurkan informasi dan menjada sarana publikasi serta melakukan rekam jejak kegiatan BEM Fakultas Teknik.</p>
 				</div>
 			</div>
 		</div>
