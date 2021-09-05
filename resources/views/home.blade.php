@@ -44,6 +44,76 @@
 	</div>
 	{{-- End Of Call To Action --}}
 
+	{{-- Visi Misi --}}
+	<div class="our-solution section-spacing">
+		<div class="container">
+			{{-- Visi --}}
+			<div class="theme-title-one">
+				<h2>VISI</h2>
+			</div>
+			<div class="wrapper mb-5">
+				<div class="row justify-content-center mb-5">
+					<div class="col-lg-8 col-sm-12 col-12">
+						<div class="single-solution-block">
+							<img src="{{ asset('bemft_assets/images/icon/vision.png') }}" alt="visi" class="icon">
+							<h5><p>Visi #1</p></h5>
+							<p style="text-align: justify;">Menjadikan Badan Eksekutif Mahasiswa Fakultas Teknik sebagai organisasi pelopor mahasiswa dalam menyalurkan bakat secara inklusif, apresiatif, dan harmonis dengan menanamkan nilai PERMATA (Pioneer, Bersih, Semangat Pagi, Satu, dan Tangguh)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{{-- Misi --}}
+			<div class="theme-title-one">
+				<h2>MISI</h2>
+			</div>
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 col-12">
+						<div class="single-solution-block">
+							<img src="{{ asset('bemft_assets/images/icon/mission.png') }}" alt="misi" class="icon">
+							<h5><p>Misi #1</p></h5>
+							<p style="text-align: justify;">Menekankan sikap yang aspiratif dan partisipatif kepada seluruh ORMAWA dan Masyarakat Fakultas Teknik </p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-12">
+						<div class="single-solution-block">
+							<img src="{{ asset('bemft_assets/images/icon/mission.png') }}" alt="misi" class="icon">
+							<h5><p>Misi #2</p></h5>
+							<p style="text-align: justify;">Menciptakan kesejahteraan kepada ORMAWA di Fakultas Teknik dengan memberikan pelayanan yang efisien guna terciptanya kegiatan kemahasiswaan yang baik</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-12">
+						<div class="single-solution-block">
+							<img src="{{ asset('bemft_assets/images/icon/mission.png') }}" alt="misi" class="icon">
+							<h5><p>Misi #3</p></h5>
+							<p style="text-align: justify;">Mewujudkan iklim berorganisasi yang profesional dengan menciptakan suasana menyenangkan dan harmonis guna terciptanya kinerja yang maksimal</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{-- End Of Visi Misi --}}
+
+	{{-- Tentang Kabinet --}}
+	<div class="about-compnay-two section-spacing">
+		<div class="overlay">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-lg-7 col-12 text">
+						<div class="theme-title-one">
+							<h2>Tentang Kabinet #SatuSinergi</h2>
+						</div>
+						<p>Bersinergi menyatukan tekad menjadi satu irama yang harmonis untuk berani beraksi memberikan perubahan diera saat ini.</p>
+						<img src="images/home/sign.png" alt="" class="sign">
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+	{{-- End Of Tentang Kabinet --}}
+
 	{{-- Divisi --}}
 	<div class="top-feature section-spacing">
 		<div class="top-features-slide">
@@ -81,77 +151,7 @@
 		</div>
 	</div>
 	{{-- End Of Divisi --}}
-
-	{{-- Tentang Kabinet --}}
-	<div class="about-compnay-two section-spacing">
-		<div class="overlay">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-lg-7 col-12 text">
-						<div class="theme-title-one">
-							<h2>Tentang Kabinet #SatuSinergi</h2>
-						</div>
-						<p>Bersinergi menyatukan tekad menjadi satu irama yang harmonis untuk berani beraksi memberikan perubahan diera saat ini.</p>
-						<img src="images/home/sign.png" alt="" class="sign">
-					</div>
-				</div>
-			</div>
-		</div> 
-	</div>
-	{{-- End Of Tentang Kabinet --}}
-
-	{{-- Visi Misi --}}
-	<div class="our-solution section-spacing">
-		<div class="container">
-			{{-- Visi --}}
-			<div class="theme-title-one">
-				<h2>VISI</h2>
-			</div>
-			<div class="wrapper mb-5">
-				<div class="row justify-content-center mb-5">
-					<div class="col-lg-8 col-sm-12 col-12">
-						<div class="single-solution-block">
-							<img src="{{ asset('bemft_assets/images/icon/8.png') }}" alt="visi" class="icon">
-							<h5><p>Visi #1</p></h5>
-							<p style="text-align: justify;">Menjadikan Badan Eksekutif Mahasiswa Fakultas Teknik sebagai organisasi pelopor mahasiswa dalam menyalurkan bakat secara inklusif, apresiatif, dan harmonis dengan menanamkan nilai PERMATA (Pioneer, Bersih, Semangat Pagi, Satu, dan Tangguh)</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			{{-- Misi --}}
-			<div class="theme-title-one">
-				<h2>MISI</h2>
-			</div>
-			<div class="wrapper">
-				<div class="row">
-					<div class="col-lg-4 col-sm-6 col-12">
-						<div class="single-solution-block">
-							<img src="{{ asset('bemft_assets/images/icon/9.png') }}" alt="misi" class="icon">
-							<h5><p>Misi #1</p></h5>
-							<p style="text-align: justify;">Menekankan sikap yang aspiratif dan partisipatif kepada seluruh ORMAWA dan Masyarakat Fakultas Teknik </p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6 col-12">
-						<div class="single-solution-block">
-							<img src="{{ asset('bemft_assets/images/icon/9.png') }}" alt="misi" class="icon">
-							<h5><p>Misi #2</p></h5>
-							<p style="text-align: justify;">Menciptakan kesejahteraan kepada ORMAWA di Fakultas Teknik dengan memberikan pelayanan yang efisien guna terciptanya kegiatan kemahasiswaan yang baik</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6 col-12">
-						<div class="single-solution-block">
-							<img src="{{ asset('bemft_assets/images/icon/9.png') }}" alt="misi" class="icon">
-							<h5><p>Misi #3</p></h5>
-							<p style="text-align: justify;">Mewujudkan iklim berorganisasi yang profesional dengan menciptakan suasana menyenangkan dan harmonis guna terciptanya kinerja yang maksimal</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	{{-- End Of Visi Misi --}}
-
+	
 	{{-- FAQ --}}
 	<div class="faq-section">
 		<div class="overlay">

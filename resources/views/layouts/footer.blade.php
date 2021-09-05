@@ -30,20 +30,20 @@
                 <div class="col-lg-3 col-sm-6 col-12 contact-widget">
                     <h6 class="title">CONTACT</h6>
                     <ul>
-                        <li>
-                            <i class="flaticon-direction-signs"></i>
-                            23A, Queenstown St, Log Vegas, United States.
+                        <li class="m-0 p-0 my-3">
+                            <p>Gedung TC Lt. 2 Kampus Universitas Surabaya <br>
+                                Jalan Raya Kalirungkut Surabaya 60293</p>
                         </li>
-                        <li>
-                            <i class="flaticon-multimedia-1"></i>
+                        <li class="d-flex m-0 p-0 my-3">
+                            <img src="{{ asset('bemft_assets/images/icon/gmail.png') }}" class="mr-3" alt="Gmail">
                             <p>bemftubaya@gmail.com</p>
                         </li>
-                        <li>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <li class="d-flex m-0 p-0 my-3">
+                            <img src="{{ asset('bemft_assets/images/icon/instagram.png') }}" class="mr-3" alt="Instagram">
                             <a href="https://www.instagram.com/bem_ft_ubaya/" target="_blank">bem_ft_ubaya</a>
                         </li>
-                        <li>
-                            <i class="fa fa-line" aria-hidden="true"></i>
+                        <li class="d-flex m-0 p-0 my-3">
+                            <img src="{{ asset('bemft_assets/images/icon/line.png') }}" class="mr-3" alt="Line">
                             <a href="#">@vqv5237u</a>
                         </li>
                     </ul>
