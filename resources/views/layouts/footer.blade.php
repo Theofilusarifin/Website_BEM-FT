@@ -31,8 +31,7 @@
                     <h6 class="title">CONTACT</h6>
                     <ul>
                         <li class="m-0 p-0 my-3">
-                            <p>Gedung TC Lt. 2 Kampus Universitas Surabaya <br>
-                                Jalan Raya Kalirungkut Surabaya 60293</p>
+                            <p>Jl. Raya Kalirungkut-Tenggilis (Gedung FG 1.1), Surabaya, 60292</p>
                         </li>
                         <li class="d-flex m-0 p-0 my-3">
                             <img src="{{ asset('bemft_assets/images/icon/gmail.png') }}" class="mr-3" alt="Gmail">
