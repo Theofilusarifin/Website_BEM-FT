@@ -8,11 +8,13 @@ use Illuminate\Support\Facades\DB;
 
 class OrmawaController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('ormawa.index');
     }
 
-    public function show($slug){
+    public function show($slug)
+    {
         $ormawa = Ormawa::where('slug',$slug)->get();
         return view('ormawa.show', compact('ormawa'));
     }

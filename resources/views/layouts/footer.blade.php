@@ -15,14 +15,17 @@
                 <div class="col-lg-3 col-sm-6 col-12 footer-list">
                     <h6 class="title">EXPLORE</h6>
                     <ul>
-                        <li class="active">
+                        <li>
                             <a href="{{ route('beranda') }}">Beranda</a>
                         </li>
                         <li>
                             <a href="#">Divisi</a>
                         </li>
-                        <li><a href="{{ route('event') }}">Event Terkini</a></li>
-                        <li><a href="{{ route('ormawa') }}">Profil Ormawa FT</a></li>
+                        <li>
+                            <a href="#">Info Mahasiswa</a>
+                        </li>
+                        <li><a href="{{ route('event') }}">Event</a></li>
+                        <li><a href="{{ route('ormawa') }}">Ormawa FT</a></li>
                         <li><a href="{{ route('galeri') }}">Galeri</a></li>
                     </ul>
                 </div> 

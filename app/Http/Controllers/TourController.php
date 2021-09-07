@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class GaleriController extends Controller
+class TourController extends Controller
 {
     public function index(){
-        return view('galeri.index');
+        return view('campus_tour.index');
     }
 }
