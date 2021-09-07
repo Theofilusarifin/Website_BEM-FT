@@ -12,8 +12,8 @@ class OrmawaController extends Controller
         return view('ormawa.index');
     }
 
-    public function show($nama){
-        $ormawa = Ormawa::where('nama',$nama)->get();
+    public function show($slug){
+        $ormawa = Ormawa::where('slug',$slug)->get();
         return view('ormawa.show', compact('ormawa'));
     }
 }

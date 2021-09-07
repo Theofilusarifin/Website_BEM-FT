@@ -27,9 +27,9 @@
 		<div class="main-page-wrapper">
 
 			{{-- Loading Transition --}}
-			<div id="loader-wrapper">
+			{{-- <div id="loader-wrapper">
 				<div id="loader"></div>
-			</div>
+			</div> --}}
 
 			<header class="header-two">
 				<div class="theme-menu-wrapper">

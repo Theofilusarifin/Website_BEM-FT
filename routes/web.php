@@ -11,7 +11,7 @@ Route::view('/HRD', 'divisi.hrd')->name('hrd');
 Route::view('/IDD', 'divisi.idd')->name('idd');
 
 Route::get('/profil/ormawa', 'OrmawaController@index')->name('ormawa');
-Route::get('/profil/ormawa/{ormawa:nama}', 'OrmawaController@show')->name('ormawa.show');
+Route::get('/profil/ormawa/{ormawa:slug}', 'OrmawaController@show')->name('ormawa.show');
 
 Route::get('/galeri', 'GaleriController@index')->name('galeri');
 Route::get('/galeri/{id}', 'GaleriController@show')->name('galeri.show');

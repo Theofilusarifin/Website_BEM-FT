@@ -39,7 +39,7 @@
                         </li>
                         <li class="d-flex m-0 p-0 my-3">
                             <img src="{{ asset('bemft_assets/images/icon/instagram.png') }}" class="mr-3" alt="Instagram">
-                            <a href="https://www.instagram.com/bem_ft_ubaya/" target="_blank">bem_ft_ubaya</a>
+                            <a href="https://www.instagram.com/bem_ft_ubaya/" target="_blank" rel="noopener noreferrer">bem_ft_ubaya</a>
                         </li>
                         <li class="d-flex m-0 p-0 my-3">
                             <img src="{{ asset('bemft_assets/images/icon/line.png') }}" class="mr-3" alt="Line">
