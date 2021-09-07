@@ -199,19 +199,19 @@
 				</div>
 				<div class="wrapper row no-gutters">
 					{{-- FAQ Part --}}
-					<div class="col-xl-6 col-lg-7 order-last">
+					<div class="col-xl-12 col-lg-7 order-last">
 						<div class="faq-content">
 							<div class="accordion-one">
 								<div class="panel-group theme-accordion" id="accordion">
 									{{-- FAQ 1 --}}
 									<div class="panel">
-										<div class="panel-heading">
+										<div class="panel-heading active-panel">
 											<h6 class="panel-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
 											1. What industries do you specialize in?</a>
 											</h6>
 										</div>
-										<div id="collapse1" class="panel-collapse collapse">
+										<div id="collapse1" class="panel-collapse collapse show">
 											<div class="panel-body">
 												<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
 											</div>
@@ -219,13 +219,13 @@
 									</div>
 									{{-- FAQ 2 --}}
 									<div class="panel">
-										<div class="panel-heading active-panel">
+										<div class="panel-heading">
 											<h6 class="panel-title">
 												<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
 												2. You guarantee that our plan will raise capital?</a>
 											</h6>
 										</div>
-										<div id="collapse2" class="panel-collapse collapse show">
+										<div id="collapse2" class="panel-collapse collapse">
 											<div class="panel-body">
 												<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
 											</div>
@@ -278,7 +278,6 @@
 						</div>
 					</div>
 					{{-- End Of FAQ Part --}}
-					<div class="col-xl-6 col-lg-5 order-first"><div class="img-box"><a data-fancybox href="https://www.youtube.com/embed/r-AuLm7S3XE?rel=0&amshowinfo=0" class="play"><i class="fa fa-play" aria-hidden="true"></i></a></div></div>
 				</div>
 			</div>
 		</div>
