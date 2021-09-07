@@ -154,7 +154,7 @@
 				<div class="main-content" style="background:#fafafa;">
 					<img src="{{ asset('bemft_assets/images/hrd.png') }}" alt="BPH">
 					<h4><a href="{{ route('bph') }}">BPH</a></h4>
-					<p>Badan Penngurus Harian</p>
+					<p>Badan Pengurus Harian</p>
 					{{-- <p style="text-align: justify;">Pengurus inti BEM Fakultas Teknik</p> --}}
 				</div> 
 			</div> 
