@@ -21,8 +21,8 @@
                         <li>
                             <a href="#">Divisi</a>
                         </li>
-                        <li><a href="#">Event Terkini</a></li>
-                        <li><a href="#">Profil Ormawa FT</a></li>
+                        <li><a href="{{ route('event') }}">Event Terkini</a></li>
+                        <li><a href="{{ route('ormawa') }}">Profil Ormawa FT</a></li>
                         <li><a href="{{ route('galeri') }}">Galeri</a></li>
                     </ul>
                 </div> 
@@ -43,7 +43,7 @@
                         </li>
                         <li class="d-flex m-0 p-0 my-3">
                             <img src="{{ asset('bemft_assets/images/icon/line.png') }}" class="mr-3" alt="Line">
-                            <a href="#">@vqv5237u</a>
+                            <p>@vqv5237u</p>
                         </li>
                     </ul>
                 </div> 

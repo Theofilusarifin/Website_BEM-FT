@@ -15,7 +15,7 @@
                 <h2>Ormawa Fakultas Teknik Universitas Surabaya</h2>
             </div>
             <div class="wrapper">
-                <div class="row">
+                <div class="row d-flex justify-content-center align-items-center">
                     {{-- KSM Teknik Elektro --}}
                     <div class="col-lg-4 col-sm-6 col-12">
                         <div class="single-solution-block">
@@ -27,7 +27,7 @@
                     <div class="col-lg-4 col-sm-6 col-12">
                         <div class="single-solution-block">
                             <img src="{{ asset('bemft_assets/images/ormawa/TK.png') }}" alt="Logo KSM TK" class="icon">
-                            <h5><a href="{{ route('ormawa') }}TK">KSM Teknik Kimia</a></h5>
+                            <h5><a href="{{ route('ormawa') }}/TK">KSM Teknik Kimia</a></h5>
                         </div> 
                     </div>
                     {{-- KSM Teknik Industri --}}
@@ -79,7 +79,6 @@
                             <h5><a href="{{ route('ormawa') }}/PPM">KMM Pengabdian Pada Masyarakat</a></h5>
                         </div> 
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-12"></div>
                     {{-- DPM Fakultas Teknik--}}
                     <div class="col-lg-4 col-sm-6 col-12">
                         <div class="single-solution-block">
@@ -87,7 +86,6 @@
                             <h5><a href="{{ route('ormawa') }}/DPM">DPM Fakultas Teknik</a></h5>
                         </div> 
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-12"></div>
                 </div>
             </div>
         </div>

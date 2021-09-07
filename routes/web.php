@@ -10,11 +10,11 @@ Route::view('/AD', 'divisi.ad')->name('ad');
 Route::view('/HRD', 'divisi.hrd')->name('hrd');
 Route::view('/IDD', 'divisi.idd')->name('idd');
 
-Route::view('/profil/ormawa', 'ormawa.index')->name('ormawa');
-Route::view('/profil/ormawa/{nama}', 'ormawa.show')->name('ormawa.show');
+Route::get('/profil/ormawa', 'OrmawaController@index')->name('ormawa');
+Route::get('/profil/ormawa/{ormawa:nama}', 'OrmawaController@show')->name('ormawa.show');
 
 Route::get('/galeri', 'GaleriController@index')->name('galeri');
-Route::get('/galeri/{nama}', 'GaleriController@show')->name('galeri.show');
+Route::get('/galeri/{id}', 'GaleriController@show')->name('galeri.show');
 
 Route::view('/event', 'kalender')->name('event');
 

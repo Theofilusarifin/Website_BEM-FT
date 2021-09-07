@@ -13,7 +13,9 @@
                         <li><a href="{{ route('idd') }}">IDD</a></li>
                     </ul>
                 </li>
-                <li class="{{ request()->is('event') ? 'active' : '' }}"><a href="{{ route('event') }}">Event Terkini</a></li>
+                <li class="{{ request()->is('event') ? 'active' : '' }}">
+                    <a href="{{ route('event') }}">Event Terkini</a>
+                </li>
                 <li class="{{ request()->is('profil/ormawa') ? 'active' : '' }}">
                     <a href="{{ route('ormawa') }}">Profil Ormawa FT</a>
                 </li>
