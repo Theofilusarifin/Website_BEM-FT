@@ -41,7 +41,7 @@
                     <div class="col-lg-4 col-sm-6 col-12">
                         <div class="single-solution-block">
                             <img src="{{ asset('bemft_assets/images/ormawa/IF.png') }}" alt="Logo KSM IF" class="icon">
-                            <h5><a href="{{ route('ormawa') }}/ksm-teknik-informatika">KSM Informatika</a></h5>
+                            <h5><a href="{{ route('ormawa') }}/ksm-informatika">KSM Informatika</a></h5>
                         </div> 
                     </div>
                     {{-- KSM Teknik Mesin dan Manufaktur --}}
