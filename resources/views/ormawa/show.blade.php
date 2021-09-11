@@ -20,7 +20,7 @@
                             <div class="theme-title-one">
                                 <h2>{{ $ormawa->nama }}</h2>
                             </div>
-                            <p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment in the sky to explore strange new worlds to seek out new life and new civilizations to boldly go where no man has gone.</p>
+                            <p>{{ $ormawa->deskripsi }}</p>
                             <p>You would see the biggest gift would be from me and the card attached would so thank you for being a friend the biggest gift.</p>
                             @isset($ormawa->nama_instagram)
                                 <div class="d-flex m-0 p-0 my-3">
