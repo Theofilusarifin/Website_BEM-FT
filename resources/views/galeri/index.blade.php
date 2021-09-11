@@ -9,7 +9,7 @@
 			<div class="theme-inner-banner section-spacing">
 				<div class="overlay">
 					<div class="container">
-						<h2>Projects</h2>
+						<h2>Galeri</h2>
 					</div> <!-- /.container -->
 				</div> <!-- /.overlay -->
 			</div> <!-- /.theme-inner-banner -->
