@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 // ROUTE BERANDA
-Route::view('/', 'home')->name('beranda');
+Route::get('/', 'HomeController@index')->name('beranda');
 
 // ROUTE DIVISI
 Route::view('/BPH', 'divisi.bph')->name('bph');

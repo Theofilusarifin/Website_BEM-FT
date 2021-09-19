@@ -18,9 +18,10 @@
                 <div class="row">
                     {{-- Kalender --}}
                     <div class="col-lg-12 col-sm-6 col-12">
-                        <div class="d-flex justify-content-center align-items-center mt-5">
-                            <img src="{{ asset('bemft_assets/images/home/20.jpg') }}" alt="Kalender" class="cover-img">
+                        <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
+                            <a href="{{ asset('bemft_assets/images/home/20.jpg') }}" download="Kalender"><img src="{{ asset('bemft_assets/images/home/20.jpg') }}" alt="Kalender" class="cover-img" /></a>
                         </div>
+                        <p class="text-center">Klik gambar kalender untuk melakukan download</p>
                     </div>
                 </div>
             </div> 

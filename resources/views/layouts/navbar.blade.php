@@ -29,4 +29,15 @@
                 <li class="{{ request()->is('galeri') ? 'active' : '' }}"><a href="{{ route('galeri') }}">Galeri</a></li>
         </ul>
     </nav>
-</div> 
+</div>
+
+{{-- Supaya responsive --}}
+<div class="right-widget float-right">
+    <ul>
+        <li class="search-option">
+            <div class="dropdown" style="visibility: hidden;">
+                <button type="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </li>
+    </ul>
+</div>

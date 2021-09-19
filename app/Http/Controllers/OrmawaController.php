@@ -10,7 +10,8 @@ class OrmawaController extends Controller
 {
     public function index()
     {
-        return view('ormawa.index');
+        $ormawas = Ormawa::all();
+        return view('ormawa.index', compact('ormawas'));
     }
 
     public function show($slug)

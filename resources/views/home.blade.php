@@ -152,37 +152,33 @@
 		<div class="top-features-slide">
 			<div class="item">
 				<div class="main-content" style="background:#fafafa;">
-					<img src="{{ asset('bemft_assets/images/bph.png') }}" alt="BPH">
+					<img src="{{ asset('bemft_assets/images/logo/bph.png') }}" alt="BPH">
 					<h4><a href="{{ route('bph') }}">BPH</a></h4>
 					<p>Badan Pengurus Harian</p>
-					{{-- <p style="text-align: justify;">Pengurus inti BEM Fakultas Teknik</p> --}}
 				</div> 
 			</div> 
 			
 			<div class="item">
 				<div class="main-content" style="background:#f6f6f6;">
-					<img src="{{ asset('bemft_assets/images/ad.png') }}" alt="AD">
+					<img src="{{ asset('bemft_assets/images/logo/a_d.png') }}" alt="AD">
 					<h4><a href="{{ route('ad') }}">AD</a></h4>
 					<p>Administration Department</p>
-					{{-- <p style="text-align: justify;">Mengurus segala urusan administrasi ormawa Fakultas Teknik. Urusan administrasi berupa pengauditan proposal dan laporan pertanggung-jawaban.</p> --}}
 				</div> 
 			</div> 
 			
 			<div class="item">
 				<div class="main-content" style="background:#efefef;">
-					<img src="{{ asset('bemft_assets/images/hrd.png') }}" alt="HRD">
+					<img src="{{ asset('bemft_assets/images/logo/hrd.png') }}" alt="HRD">
 					<h4><a href="{{ route('hrd') }}">HRD</a></h4>
 					<p>Human Resource Department</p>
-					{{-- <p style="text-align: justify;">Menjaga hubungan antar internal dan eksternal BEM Fakultas Teknik. Mulai dari menyiapkan acara - acara bonding internal hingga membuat kegiatan dengan pihak luar BEM Fakultas Teknik.</p> --}}
 				</div> 
 			</div> 
 			
 			<div class="item">
 				<div class="main-content" style="background:#e9e9e9;">
-					<img src="{{ asset('bemft_assets/images/idd.png') }}" alt="IDD">
+					<img src="{{ asset('bemft_assets/images/logo/idd.png') }}" alt="IDD">
 					<h4><a href="{{ route('idd') }}">IDD</a></h4>
 					<p>Information and Design Department</p>
-					{{-- <p style="text-align: justify;">Menyalurkan informasi dan menjada sarana publikasi serta melakukan rekam jejak kegiatan BEM Fakultas Teknik.</p> --}}
 				</div>
 			</div>
 		</div>
@@ -294,42 +290,26 @@
 			<div class="wrapper">
 				<div class="clearfix">
 					<div class="latest-news-slider">
-						<div class="item">
-							<div class="single-blog">
-								<div class="image-box">
-									<img src="{{ asset('bemft_assets/images/blog/3.jpg') }}" alt="">
-									<div class="overlay"><a href="#" class="date">Feb 06, 2018</a></div>
+						@if(count($galleris))
+							@foreach($galleris as $galleri)
+								<div class="item">
+									<div class="single-blog">
+										<div class="image-box">
+											<img src="{{ asset('bemft_assets/images/blog/3.jpg') }}" alt="">
+											<div class="overlay"><a href="#" class="date">Feb 06, 2018</a></div>
+										</div>
+										<div class="post-meta">
+											<h5 class="title"><a href="blog-details.html">Trouble with the law since to eastern side of yellow mint</a></h5>
+											<a href="blog-details.html" class="read-more">READ MORE</a>
+										</div>
+									</div>
 								</div>
-								<div class="post-meta">
-									<h5 class="title"><a href="blog-details.html">Trouble with the law since to eastern side of yellow mint</a></h5>
-									<a href="blog-details.html" class="read-more">READ MORE</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="single-blog">
-								<div class="image-box">
-									<img src="{{ asset('bemft_assets/images/blog/4.jpg') }}" alt="">
-									<div class="overlay"><a href="#" class="date">Mar 30, 2018</a></div>
-								</div>
-								<div class="post-meta">
-									<h5 class="title"><a href="blog-details.html">Kind of torture to have to watch the show the one day</a></h5>
-									<a href="blog-details.html" class="read-more">READ MORE</a>
-								</div>
-							</div>
-						</div> 
-						<div class="item">
-							<div class="single-blog">
-								<div class="image-box">
-									<img src="{{ asset('bemft_assets/images/blog/5.jpg') }}" alt="">
-									<div class="overlay"><a href="#" class="date">Apr 14, 2018</a></div>
-								</div>
-								<div class="post-meta">
-									<h5 class="title"><a href="blog-details.html">Make the best of things its an uphill climb long time</a></h5>
-									<a href="blog-details.html" class="read-more">READ MORE</a>
-								</div>
-							</div>
-						</div>
+							@endforeach
+						@else
+							{{-- <div class="text-center"  style="border:solid black 5px">
+								<p>Belum ada dokumentasi kegiatan untuk saat ini.</p>
+							</div> --}}
+						@endif
 					</div>
 				</div>
 			</div>

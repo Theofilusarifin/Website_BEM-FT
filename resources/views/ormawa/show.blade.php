@@ -13,8 +13,8 @@
             <div class="overlay">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <img src="{{asset('/bemft_assets/images/ormawa' .'/'.$ormawa->nama_singkatan.'.png')}}" alt="Logo Ormawa" style="width=540px; max-width:540px" class="left-img">
+                        <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                            <img src="{{asset('/bemft_assets/images/ormawa' .'/'.$ormawa->nama_singkatan.'.png')}}" alt="Logo Ormawa" style="height=300px; max-height:300px; width:auto" class="img-fluid">
                         </div>
                         <div class="col-lg-6 col-12 text">
                             <div class="theme-title-one">
@@ -25,7 +25,7 @@
                             @isset($ormawa->nama_instagram)
                                 <div class="d-flex m-0 p-0 my-3">
                                     <img src="{{ asset('bemft_assets/images/icon/instagram.png') }}" class="mr-3 image-fluid" alt="Instagram">
-                                    <a href="{{ $ormawa->link_instagram }}" target="_blank" rel="noopener noreferrer">{{ $ormawa->nama_instagram }}</a>
+                                    <a href="{{ 'https://'.$ormawa->link_instagram }}" target="_blank" rel="noopener noreferrer">{{ $ormawa->nama_instagram }}</a>
                                 </div>
                             @endisset
                             @isset($ormawa->oa_line)
