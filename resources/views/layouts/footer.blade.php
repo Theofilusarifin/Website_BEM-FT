@@ -15,14 +15,14 @@
                 <div class="col-lg-3 col-sm-6 col-12 footer-list">
                     <h6 class="title">EXPLORE</h6>
                     <ul>
-                        <li>
+                        <li >
                             <a href="{{ route('beranda') }}">Beranda</a>
                         </li>
                         <li>
-                            <a href="#">Divisi</a>
+                            <a href="{{ route('bph') }}">Divisi</a>
                         </li>
                         <li>
-                            <a href="#">Info Mahasiswa</a>
+                            <a href="{{ route('tour') }}">Info Mahasiswa</a>
                         </li>
                         <li><a href="{{ route('event') }}">Event</a></li>
                         <li><a href="{{ route('ormawa') }}">Ormawa FT</a></li>
@@ -37,15 +37,15 @@
                             <p>Jl. Raya Kalirungkut-Tenggilis (Gedung FG 1.1), Surabaya, 60292</p>
                         </li>
                         <li class="d-flex m-0 p-0 my-3">
-                            <img src="{{ asset('bemft_assets/images/icon/gmail.png') }}" class="mr-3" alt="Gmail">
+                            <img src="{{ asset('bemft_assets/images/icon/gmail.png') }}" class="mr-3" style="max-height:25px; height 25px; width:auto" alt="Gmail">
                             <p>bemftubaya@gmail.com</p>
                         </li>
                         <li class="d-flex m-0 p-0 my-3">
-                            <img src="{{ asset('bemft_assets/images/icon/instagram.png') }}" class="mr-3" alt="Instagram">
-                            <a href="https://www.instagram.com/bem_ft_ubaya/" target="_blank" rel="noopener noreferrer">bem_ft_ubaya</a>
+                            <img src="{{ asset('bemft_assets/images/icon/instagram.png') }}" class="mr-3" style="max-height:25px; height 25px; width:auto" alt="Instagram">
+                            <a href="https://www.instagram.com/bem_ft_ubaya" target="_blank" rel="noopener noreferrer">bem_ft_ubaya</a>
                         </li>
                         <li class="d-flex m-0 p-0 my-3">
-                            <img src="{{ asset('bemft_assets/images/icon/line.png') }}" class="mr-3" alt="Line">
+                            <img src="{{ asset('bemft_assets/images/icon/line.png') }}" class="mr-3" style="max-height:25px; height 25px; width:auto" alt="Line">
                             <p>@vqv5237u</p>
                         </li>
                     </ul>

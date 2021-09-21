@@ -1898,7 +1898,7 @@ body .theme-button-one:hover {
     background-color: #707d9e;
 }
 .theme-inner-banner .overlay {
-    background: rgba(0, 26, 87, 0.4);
+    background: rgba(0, 26, 87, 0.8);
     text-align: center;
     padding: 110px 0 70px 0;
 }

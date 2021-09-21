@@ -19,9 +19,11 @@
                     {{-- Kalender --}}
                     <div class="col-lg-12 col-sm-6 col-12">
                         <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
-                            <a href="{{ asset('bemft_assets/images/home/20.jpg') }}" download="Kalender"><img src="{{ asset('bemft_assets/images/home/20.jpg') }}" alt="Kalender" class="cover-img" /></a>
+                            <img src="{{ asset('bemft_assets/images/home/20.jpg') }}" alt="Kalender" class="cover-img" />
                         </div>
-                        <p class="text-center">Klik gambar kalender untuk melakukan download</p>
+                        <a class="d-flex justify-content-center align-items-center" href="{{ asset('bemft_assets/images/home/20.jpg') }}" download="Kalender Kegiatan Ormawa Teknik">
+                            <p style="text-align: justify; text-justify: inter-word;">Klik disini untuk melakukan download kalender</p>
+                        </a>
                     </div>
                 </div>
             </div> 

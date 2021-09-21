@@ -20,17 +20,16 @@
                             <div class="theme-title-one">
                                 <h2>{{ $ormawa->nama }}</h2>
                             </div>
-                            <p>{{ $ormawa->deskripsi }}</p>
-                            <p>You would see the biggest gift would be from me and the card attached would so thank you for being a friend the biggest gift.</p>
+                            <p style="text-align: justify; text-justify: inter-word;">{{ $ormawa->deskripsi }}</p>
                             @isset($ormawa->nama_instagram)
                                 <div class="d-flex m-0 p-0 my-3">
-                                    <img src="{{ asset('bemft_assets/images/icon/instagram.png') }}" class="mr-3 image-fluid" alt="Instagram">
-                                    <a href="{{ 'https://'.$ormawa->link_instagram }}" target="_blank" rel="noopener noreferrer">{{ $ormawa->nama_instagram }}</a>
+                                    <img src="{{ asset('bemft_assets/images/icon/instagram.png') }}" class="mr-3 image-fluid" style="max-height:25px; height 25px; width:auto" alt="Instagram">
+                                    <a href="{{ 'https://instagram.com/'.$ormawa->nama_instagram }}" target="_blank" rel="noopener noreferrer">{{ $ormawa->nama_instagram }}</a>
                                 </div>
                             @endisset
                             @isset($ormawa->oa_line)
                                 <div class="d-flex m-0 p-0 my-3">
-                                    <img src="{{ asset('bemft_assets/images/icon/line.png') }}" class="mr-3 image-fluid" alt="Line">
+                                    <img src="{{ asset('bemft_assets/images/icon/line.png') }}" class="mr-3 image-fluid" style="max-height:25px; height 25px; width:auto" alt="Line">
                                     <p>{{ $ormawa->oa_line }}</p>
                                 </div>
                             @endisset

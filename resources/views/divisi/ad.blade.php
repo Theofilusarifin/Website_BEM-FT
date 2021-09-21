@@ -9,7 +9,7 @@
 		</div>
 	</div>
 
-	<div class="our-solution section-spacing mt-5">
+	<div class="our-solution mt-5">
 		<div class="container">
 			<div class="theme-title-one">
 				<h2>Administration Department</h2>
@@ -17,16 +17,17 @@
 		</div>
 	</div>
 
-	<div class="about-compnay-two no-bg section-spacing">
+	<div class="about-compnay-two no-bg mb-5">
 		<div class="overlay">
 			<div class="container">
-				<div class="row">
+				<div class="row d-flex justify-content-center align-items-center">
 					<div class="col-lg-6 col-12">
-						<img src="{{ asset('bemft_assets/images/ad.png') }}" alt="Logo Divisi" style="width=540px; max-width:540px; padding-left: 350px" class="left-img">
+						<img src="{{ asset('bemft_assets/images/logo/a_d.png') }}" class="mx-auto d-block" alt="Logo Divisi" style="max-height:240px; height:240px; width:auto">
 					</div>
-					<div class="col-lg-6 col-12 text">
-						<p>You would see the biggest gift would be from me and the card 
-							attached would so thank you for being a friend the biggest gift.</p>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+					<div class="col-lg-8 col-12 text">
+						<p style="text-align: justify; text-justify: inter-word;">Administration Department (AD) adalah divisi BEM FT yang mengurus segala urusan administrasi Ormawa Fakultas Teknik berupa pengauditan proposal dan laporan pertanggung-jawaban.</p>
 					</div>
 				</div>
 			</div>
@@ -37,8 +38,9 @@
 	<div class="our-team section-spacing">
         <div class="container">
             <div class="wrapper">
+                {{-- Koor Wakoor --}}
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
@@ -49,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
@@ -61,15 +63,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="our-team section-spacing">
-        <div class="container">
-            <div class="wrapper">
+                {{-- End Of Koor Wakoor --}}
+                {{-- Anggota --}}
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
@@ -80,7 +77,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
@@ -91,7 +88,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
@@ -102,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
@@ -114,6 +111,7 @@
                         </div>
                     </div>
                 </div>
+                {{-- End Of Anggota --}}
             </div>
         </div>
     </div>
