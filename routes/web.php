@@ -30,4 +30,8 @@ Route::get('/galeri/{id}', 'GaleriController@show')->name('galeri.show');
 
 // ROUTE ADMIN
 Auth::routes();
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::prefix('admin')->middleware('auth')->group(function(){
+    Route::get('/', 'AdminController@index')->name('admin.index');
+    Route::get('/kalender', 'AdminController@show')->name('kalender.show');
+    Route::post('/kalender', 'AdminController@update')->name('kalender.update');
+});
