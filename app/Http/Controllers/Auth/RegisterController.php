@@ -38,7 +38,8 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        // Ganti dari guest ke auth biar orang random ga bisa register
+        $this->middleware('auth');
     }
 
     /**

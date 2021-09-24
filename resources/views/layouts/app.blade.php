@@ -58,9 +58,6 @@
 			
 
 
-		<!-- Optional JavaScript _____________________________  -->
-
-    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     	<!-- jQuery -->
 		<script src="{{ asset('bemft_assets/vendor/jquery.2.2.3.min.js') }}"></script>
 		<!-- Popper js -->
@@ -71,6 +68,7 @@
 		<script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/jquery.mobile.customized.min.js') }}'></script>
 	    <script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/jquery.easing.1.3.js') }}'></script> 
 	    <script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/camera.min.js') }}'></script>
+		
 	    <!-- menu  -->
 		<script src="{{ asset('bemft_assets/vendor/menu/src/js/jquery.slimmenu.js') }}"></script>
 		<!-- WOW js -->

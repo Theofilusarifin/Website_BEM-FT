@@ -32,6 +32,8 @@ Route::get('/galeri/{id}', 'GaleriController@show')->name('galeri.show');
 Auth::routes();
 Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/', 'AdminController@index')->name('admin.index');
-    Route::get('/kalender', 'AdminController@show')->name('kalender.show');
-    Route::post('/kalender', 'AdminController@update')->name('kalender.update');
+    Route::get('/kalender', 'AdminController@kalenderShow')->name('admin.kalender.show');
+    Route::post('/kalender', 'AdminController@kalenderUpdate')->name('admin.kalender.update');
+    Route::get('/galeri', 'AdminController@galeriShow')->name('admin.galeri.show');
+    Route::post('/galeri', 'AdminController@galeriUpdate')->name('admin.galeri.update');
 });

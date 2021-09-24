@@ -1,23 +1,13 @@
 @extends('layouts.admin_app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
+    <div style="height: 250px;"></div>
+    <div class="our-solution section-spacing mt-5">
+        <div class="container">
+            <div class="theme-title-one">
+                <h2>Selamat Datang Admin :)</h2>
             </div>
         </div>
     </div>
-</div>
+    <div style="height: 250px;"></div>
 @endsection
