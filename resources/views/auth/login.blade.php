@@ -1,11 +1,16 @@
 @extends('layouts.admin_app')
 
 @section('content')
-    <div style="height: 100px;"></div>
+    <div class="theme-inner-banner mb-5">
+        <div class="overlay">
+            <div class="container">
+                <h2>Login</h2>
+            </div>
+        </div>
+    </div>
     <div class="contact-us-section">
         <div class="container">
             <div class="theme-title-one">
-                <h2>Login</h2>
                 <p>Harap Login menggunakan username dan password yang sesuai</p>
             </div>
             <div class="form-wrapper">
