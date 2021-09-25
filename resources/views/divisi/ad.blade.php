@@ -72,7 +72,7 @@
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
                             </div>
                             <div class="text">
-                                <h6 class="mb-2">Person1</h6>
+                                <h6 class="mb-2">Evangeline Alicia T.</h6>
                                 <span>Anggota Administration Department</span>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
                             </div>
                             <div class="text">
-                                <h6 class="mb-2">Person2</h6>
+                                <h6 class="mb-2">Tiffany Chandra</h6>
                                 <span>Anggota Administration Department</span>
                             </div>
                         </div>
@@ -94,18 +94,7 @@
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
                             </div>
                             <div class="text">
-                                <h6 class="mb-2">Person3</h6>
-                                <span>Anggota Administration Department</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
-                        <div class="team-member">
-                            <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
-                            </div>
-                            <div class="text">
-                                <h6 class="mb-2">Person4</h6>
+                                <h6 class="mb-2">Rivaldo Tan</h6>
                                 <span>Anggota Administration Department</span>
                             </div>
                         </div>

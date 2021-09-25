@@ -72,7 +72,7 @@
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
                             </div>
                             <div class="text">
-                                <h6 class="mb-2">Person1</h6>
+                                <h6 class="mb-2">Monica Natalia</h6>
                                 <span>Anggota Human Resource Department</span>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
                             </div>
                             <div class="text">
-                                <h6 class="mb-2">Person2</h6>
+                                <h6 class="mb-2">Antonius Yabes S.</h6>
                                 <span>Anggota Human Resource Department</span>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
                             </div>
                             <div class="text">
-                                <h6 class="mb-2">Person3</h6>
+                                <h6 class="mb-2">Ariq Al Khasyi</h6>
                                 <span>Anggota Human Resource Department</span>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                                 <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
                             </div>
                             <div class="text">
-                                <h6 class="mb-2">Person4</h6>
+                                <h6 class="mb-2">Alvin Renaldo W.</h6>
                                 <span>Anggota Human Resource Department</span>
                             </div>
                         </div>
