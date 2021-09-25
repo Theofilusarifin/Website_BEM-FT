@@ -15,6 +15,7 @@ Route::view('/IDD', 'divisi.idd')->name('idd');
 
 // ROUTE INFO MAHASISWA
 Route::get('/tour', 'TourController@index')->name('tour');
+Route::post('/tour', 'TourController@show')->name('tour.show');
 Route::view('/gform', 'gform')->name('gform');
 
 // ROUTE EVENT

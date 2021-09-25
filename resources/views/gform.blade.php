@@ -13,7 +13,7 @@
         <div class="container">
             <div class="theme-title-one mb-5">
                 <h2>Gform Prestasi</h2>
-                <p class="mt-2">Klik button Fill Out Form untuk mengisi GForm</p>
+                <p class="mt-2">Lakukan klik pada button fill Out Form untuk mengisi GForm</p>
             </div>
             <div class="wrapper">
                 <div class="row d-flex justify-content-center align-items-center">

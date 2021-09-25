@@ -20,7 +20,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ asset('bemft_assets/css/style.css') }}">
 		<!-- responsive style sheet -->
 		<link rel="stylesheet" type="text/css" href="{{ asset('bemft_assets/css/responsive.css') }}">
-
+		@yield('style')
 	</head>
 
 	<body>
@@ -56,39 +56,39 @@
 				<i class="fa fa-angle-up" aria-hidden="true"></i>
 			</button>
 			
+			@yield('javascript')
 
+			<!-- jQuery -->
+			<script src="{{ asset('bemft_assets/vendor/jquery.2.2.3.min.js') }}"></script>
+			<!-- Popper js -->
+			<script src="{{ asset('bemft_assets/vendor/popper.js/popper.min.js') }}"></script>
+			<!-- Bootstrap JS -->
+			<script src="{{ asset('bemft_assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+			<!-- Camera Slider -->
+			<script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/jquery.mobile.customized.min.js') }}'></script>
+			<script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/jquery.easing.1.3.js') }}'></script> 
+			<script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/camera.min.js') }}'></script>
+			
+			<!-- menu  -->
+			<script src="{{ asset('bemft_assets/vendor/menu/src/js/jquery.slimmenu.js') }}"></script>
+			<!-- WOW js -->
+			<script src="{{ asset('bemft_assets/vendor/WOW-master/dist/wow.min.js') }}"></script>
+			<!-- owl.carousel -->
+			<script src="{{ asset('bemft_assets/vendor/owl-carousel/owl.carousel.min.js') }}"></script>
+			<!-- js count to -->
+			<script src="{{ asset('bemft_assets/vendor/jquery.appear.js') }}"></script>
+			<script src="{{ asset('bemft_assets/vendor/jquery.countTo.js') }}"></script>
+			<!-- Fancybox -->
+			<script src="{{ asset('bemft_assets/vendor/fancybox/dist/jquery.fancybox.min.js') }}"></script>
+			<!-- Language Stitcher -->
+			<script src="{{ asset('bemft_assets/vendor/language-switcher/jquery.polyglot.language.switcher.js') }}"></script>
+			<!-- Google map js -->
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQLCCbRKFhsr8BY78g2PQ0_bTyrm_YXU"></script>
+			<script src="{{ asset('bemft_assets/vendor/sanzzy-map/dist/snazzy-info-window.min.js') }}"></script>
 
-    	<!-- jQuery -->
-		<script src="{{ asset('bemft_assets/vendor/jquery.2.2.3.min.js') }}"></script>
-		<!-- Popper js -->
-		<script src="{{ asset('bemft_assets/vendor/popper.js/popper.min.js') }}"></script>
-		<!-- Bootstrap JS -->
-		<script src="{{ asset('bemft_assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-		<!-- Camera Slider -->
-		<script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/jquery.mobile.customized.min.js') }}'></script>
-	    <script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/jquery.easing.1.3.js') }}'></script> 
-	    <script src='{{ asset('bemft_assets/vendor/Camera-master/scripts/camera.min.js') }}'></script>
-		
-	    <!-- menu  -->
-		<script src="{{ asset('bemft_assets/vendor/menu/src/js/jquery.slimmenu.js') }}"></script>
-		<!-- WOW js -->
-		<script src="{{ asset('bemft_assets/vendor/WOW-master/dist/wow.min.js') }}"></script>
-		<!-- owl.carousel -->
-		<script src="{{ asset('bemft_assets/vendor/owl-carousel/owl.carousel.min.js') }}"></script>
-		<!-- js count to -->
-		<script src="{{ asset('bemft_assets/vendor/jquery.appear.js') }}"></script>
-		<script src="{{ asset('bemft_assets/vendor/jquery.countTo.js') }}"></script>
-		<!-- Fancybox -->
-		<script src="{{ asset('bemft_assets/vendor/fancybox/dist/jquery.fancybox.min.js') }}"></script>
-		<!-- Language Stitcher -->
-		<script src="{{ asset('bemft_assets/vendor/language-switcher/jquery.polyglot.language.switcher.js') }}"></script>
-		<!-- Google map js -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQLCCbRKFhsr8BY78g2PQ0_bTyrm_YXU"></script>
-		<script src="{{ asset('bemft_assets/vendor/sanzzy-map/dist/snazzy-info-window.min.js') }}"></script>
-
-		<!-- Theme js -->
-		<script src="{{ asset('bemft_assets/js/theme.js') }}"></script>
-		<script src="{{ asset('bemft_assets/js/map-script.js') }}"></script>
-		</div> <!-- /.main-page-wrapper -->
+			<!-- Theme js -->
+			<script src="{{ asset('bemft_assets/js/theme.js') }}"></script>
+			<script src="{{ asset('bemft_assets/js/map-script.js') }}"></script>
+		</div>
 	</body>
 </html>

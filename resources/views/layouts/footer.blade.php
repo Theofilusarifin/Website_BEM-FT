@@ -22,9 +22,8 @@
                             <a href="{{ route('bph') }}">Divisi</a>
                         </li>
                         <li>
-                            <a href="{{ route('tour') }}">Info Mahasiswa</a>
+                            <a href="{{ route('event') }}">Info Mahasiswa</a>
                         </li>
-                        <li><a href="{{ route('event') }}">Event</a></li>
                         <li><a href="{{ route('ormawa') }}">Ormawa FT</a></li>
                         <li><a href="{{ route('galeri') }}">Galeri</a></li>
                     </ul>
