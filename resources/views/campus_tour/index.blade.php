@@ -25,7 +25,7 @@
         <div class="container">
             <div class="theme-title-one mb-5">
                 <h2>Campus Tour</h2>
-                <p class="mt-2">Lakukan Klik pada salah satu button untuk melakukan campus tour tehadap gedung tersebut</p>
+                <p class="mt-2">Lakukan klik pada salah satu button untuk melakukan campus tour tehadap gedung tersebut</p>
             </div>
             <div class="row d-flex justify-content-center align-items-center">
                 <button onclick="gedung('TA')" class="theme-button-one m-2">TA</button>
