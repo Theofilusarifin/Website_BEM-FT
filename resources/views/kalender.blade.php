@@ -4,7 +4,7 @@
     <div class="theme-inner-banner section-spacing">
         <div class="overlay">
             <div class="container">
-                <h2>Event Terkini</h2>
+                <h2>Info Mahasiswa</h2>
             </div>
         </div>
     </div>

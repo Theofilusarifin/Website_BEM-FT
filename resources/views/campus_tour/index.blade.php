@@ -46,11 +46,11 @@
             <div class="container">
                 <div class="wrapper no-gutters">
                     <div class="theme-title-one mb-5">
-                        <h3>Gedung {{ $item->nama }}</h3>
+                        <h3 id="nama_gedung">Gedung TA</h3>
                     </div>
                     <div class="row justify-content-center align-items-center">
                         <div class="col-xl-6 col-lg-5">
-                            <div class="img-box">
+                            <div class="img-box" id="video_gedung">
                                 <a data-fancybox href="{{ $item->link_youtube }}" class="play">
                                     <i class="fa fa-play" aria-hidden="true"></i>
                                 </a>
@@ -60,7 +60,9 @@
                     {{-- Penjelasan Gedung --}}
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-12 mt-5 text">
-                            <p style="text-align: justify; text-justify: inter-word;">{{ $item->deskripsi }}</p>
+                            <p style="text-align: justify; text-justify: inter-word;" id="deskripsi_gedung">
+                                {{ $item->deskripsi }}
+                            </p>
                         </div>
                     </div>
                     {{-- End Of Penjelasan Gedung --}}
@@ -82,6 +84,18 @@
                     '_token':'<?php echo csrf_token() ?>',
                     'id_gedung':id_gedung
                 },
+                success: function(data){
+                    $.each(data.gedung, function(key,value){
+                        $("h3#nama_gedung").html("Gedung "+data.gedung[key].nama);
+                        $("div#video_gedung").html(`<a data-fancybox href="`+data.gedung[key].link_youtube+`" class="play">
+                                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                                    </a>`);
+                        $("p#deskripsi_gedung").html(data.gedung[key].deskripsi);
+                    })
+                }, 
+                error: function(err) {
+                    alert('gagal disini');
+                }
             });
         }
     </script>
