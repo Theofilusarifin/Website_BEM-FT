@@ -191,7 +191,7 @@
 			<div class="container">
 				<div class="theme-title-one">
 					<h2>FAQ</h2>
-					<p>Berikut adalah FAQ seputar BEM Fakultas Teknik</p>
+					<p class="mb-5">Berikut adalah FAQ seputar BEM Fakultas Teknik</p>
 				</div>
 				<div class="wrapper row no-gutters">
 					{{-- FAQ Part --}}
@@ -285,7 +285,11 @@
 		<div class="container">
 			<div class="theme-title-one">
 				<h2>Galeri</h2>
-				<p>Berikut ini adalah dokumentasi dari proker-proker BEM Fakultas Teknik</p>
+				@if(count($galleris))
+					<p>Berikut ini adalah dokumentasi dari proker-proker BEM Fakultas Teknik</p>
+				@else
+					<p>Belum ada dokumentasi kegiatan untuk saat ini.</p>
+				@endif
 			</div>
 			<div class="wrapper">
 				<div class="clearfix">
@@ -295,20 +299,16 @@
 								<div class="item">
 									<div class="single-blog">
 										<div class="image-box">
-											<img src="{{ asset('bemft_assets/images/blog/3.jpg') }}" alt="">
-											<div class="overlay"><a href="#" class="date">Feb 06, 2018</a></div>
+											<img src="{{ asset('bemft_assets/images/galleri/'.$galleri->nama_singkatan.'jpg') }}" alt="Dokumentasi Program Kerja">
+											<div class="overlay"><a href="#" class="date">{{ $galleri->tanggal }}</a></div>
 										</div>
 										<div class="post-meta">
-											<h5 class="title"><a href="blog-details.html">Trouble with the law since to eastern side of yellow mint</a></h5>
-											<a href="blog-details.html" class="read-more">READ MORE</a>
+											<h5 class="title"><a href="{{ $galleri->slug }}">{{ $galleri->nama }}</a></h5>
+											<a href="{{ $galleri->slug }}" class="read-more">{{ Str::limit($galleri->deskripsi, 80, '...') }}</a>
 										</div>
 									</div>
 								</div>
 							@endforeach
-						@else
-							{{-- <div class="text-center"  style="border:solid black 5px">
-								<p>Belum ada dokumentasi kegiatan untuk saat ini.</p>
-							</div> --}}
 						@endif
 					</div>
 				</div>

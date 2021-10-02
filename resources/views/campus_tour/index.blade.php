@@ -9,6 +9,9 @@
             position: relative;
             height: 500px;
         }
+        .loader{
+            display: none;
+        }
     </style>
 @endsection
 
@@ -39,6 +42,15 @@
         </div>
     </div>
     {{-- End Of Button Navigation Gedung --}}
+    {{-- Loader --}}
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+            <div class="loader my-5">
+                <img class='my-5' src="{{ asset('bemft_assets/images/ajax-loader.gif') }}" alt="loader">
+            </div>
+        </div>
+    </div>
+    {{-- End Of Loader --}}
     {{-- Video Gedung --}}
     @foreach ($gedung as $item)
     <div class="faq-section" style="margin-top:-30px;">
@@ -84,6 +96,14 @@
                     '_token':'<?php echo csrf_token() ?>',
                     'id_gedung':id_gedung
                 },
+                beforeSend: function(){
+                    $('.faq-section').hide();
+                    $('.loader').show();
+                    setTimeout(function(){
+                        $('.loader').hide();
+                        $('.faq-section').show();
+                    }, 1500);
+                },
                 success: function(data){
                     $.each(data.gedung, function(key,value){
                         $("h3#nama_gedung").html("Gedung "+data.gedung[key].nama);
@@ -94,7 +114,7 @@
                     })
                 }, 
                 error: function(err) {
-                    alert('gagal disini');
+                    alert('Terdapat suatu error, harap hubungi pihak BEM-FT');
                 }
             });
         }
