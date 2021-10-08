@@ -54,7 +54,7 @@
     </div>
     <div class="bottom-footer">
         <div class="container">
-            <p>&copy; Copyrights BEM Fakultas Teknik Ubaya</p>
+            <p>&copy; Copyrights BEM FT Ubaya</p>
         </div>
     </div>
 </footer>

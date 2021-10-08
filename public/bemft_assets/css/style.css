@@ -106,11 +106,11 @@
 
 /*==================== Click Top ====================*/
 .scroll-top {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     bottom: 10px;
-    right: 5px;
+    right: 10px;
     z-index: 99;
     text-align: center;
     color: #fff;
@@ -425,7 +425,7 @@ body .theme-button-one:hover {
     width: 40px;
     height: 4px;
     border-radius: 10px;
-    background: #c3c3c3;
+    background: #fff;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -833,7 +833,7 @@ body .theme-button-one:hover {
     border-bottom: 4px solid transparent;
 }
 .top-feature .main-content:hover {
-    border-bottom-color: #001a57;
+    border-bottom-color: rgba(7, 104, 150, 1);
 }
 .top-feature .main-content img {
     margin: 0 auto;
@@ -848,7 +848,7 @@ body .theme-button-one:hover {
     width: 40px;
     height: 4px;
     border-radius: 10px;
-    background: #c3c3c3;
+    background: linear-gradient(90deg,rgba(10, 136, 161, 1) 0%,rgba(7, 104, 150, 1) 49%,rgba(4, 73, 133, 1) 100%);
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -1325,7 +1325,12 @@ body .theme-button-one:hover {
 }
 .theme-footer-one .top-footer .footer-newsletter .theme-button-one:hover {
     color: #fff;
-    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(10, 136, 161, 1) 0%,
+        rgba(7, 104, 150, 1) 49%,
+        rgba(4, 73, 133, 1) 100%
+    );
 }
 .theme-footer-one .top-footer .footer-newsletter ::-webkit-input-placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -1380,8 +1385,12 @@ body .theme-button-one:hover {
 }
 /*---------------------- Theme footer Two ------------------*/
 .theme-footer-two {
-    background: rgb(4,73,133);
-    background: linear-gradient(90deg, rgba(4,73,133,1) 0%, rgba(3,52,94,1) 100%);
+    background: rgb(4, 73, 133);
+    background: linear-gradient(
+        90deg,
+        rgba(4, 73, 133, 1) 0%,
+        rgba(3, 52, 94, 1) 100%
+    );
     padding-top: 75px;
 }
 .theme-footer-two .logo-widget p {
@@ -1482,7 +1491,12 @@ body .theme-button-one:hover {
 }
 /*----------------- CallOut Banner  --------------*/
 .callout-banner {
-    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(10, 136, 161, 1) 0%,
+        rgba(7, 104, 150, 1) 49%,
+        rgba(4, 73, 133, 1) 100%
+    );
     /* background-image: url(../images/home/pattern2.png); */
     padding: 40px 0;
 }
@@ -1494,7 +1508,7 @@ body .theme-button-one:hover {
 }
 .callout-banner p {
     float: left;
-    color: #a9b3c8;
+    color: #fff;
     padding-left: 70px;
     width: 75%;
     position: relative;
@@ -1503,7 +1517,7 @@ body .theme-button-one:hover {
     content: "";
     width: 4px;
     height: 93%;
-    background: #9ca6bc;
+    background: #fff;
     border-radius: 5px;
     position: absolute;
     left: 25px;
@@ -1563,7 +1577,12 @@ body .theme-button-one:hover {
     background-color: #707d9e;
 }
 .about-compnay-two .overlay {
-    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(10, 136, 161, 1) 0%,
+        rgba(7, 104, 150, 1) 49%,
+        rgba(4, 73, 133, 1) 100%
+    );
     padding: 100px 0;
     padding: 100px 0;
 }
@@ -1577,10 +1596,10 @@ body .theme-button-one:hover {
 .about-compnay-two .theme-title-one h2:before {
     left: 0;
     margin: 0;
-    color: #919fbf;
+    color: #fff;
 }
 .about-compnay-two .text p {
-    color: #cad2e5;
+    color: #fff;
     padding: 0 50px 15px 0;
 }
 .about-compnay-two .text .sign {
@@ -1610,7 +1629,7 @@ body .theme-button-one:hover {
     color: #232323;
 }
 .about-compnay-two.no-bg .theme-title-one h2:before {
-    background: #c3c3c3;
+    background: #fff;
 }
 .about-compnay-two.no-bg .text p {
     color: #555555;
@@ -1642,7 +1661,12 @@ body .theme-button-one:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(10,136,161,0.7) 0%, rgba(7,104,150,0.7) 49%, rgba(4,73,133,0.7) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(10, 136, 161, 0.7) 0%,
+        rgba(7, 104, 150, 0.7) 49%,
+        rgba(4, 73, 133, 0.7) 100%
+    );
     border-radius: 5px;
     -webkit-transform: scale(1, 0);
     transform: scale(1, 0);
@@ -1701,8 +1725,13 @@ body .theme-button-one:hover {
 }
 /*------------------- Faq Section -------------------*/
 .faq-section .overlay {
-    background: rgb(10,136,161);
-    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
+    background: rgb(10, 136, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(10, 136, 161, 1) 0%,
+        rgba(7, 104, 150, 1) 49%,
+        rgba(4, 73, 133, 1) 100%
+    );
     padding: 95px 0 95px 0;
     height: auto;
     margin-bottom: 70px;
@@ -1711,10 +1740,10 @@ body .theme-button-one:hover {
     color: #fff;
 }
 .faq-section .theme-title-one h2:before {
-    background: #ced7ec;
+    background: #fff;
 }
 .faq-section .theme-title-one p {
-    color: #cad2e5;
+    color: #fff;
 }
 .faq-section .wrapper {
 }
@@ -1739,7 +1768,7 @@ body .theme-button-one:hover {
 }
 .faq-section .wrapper .faq-content {
     background: #fff;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 60px 0 60px;
     padding: 43px 50px 60px 50px;
 }
 .accordion-one .panel-heading {
@@ -1748,7 +1777,7 @@ body .theme-button-one:hover {
     border: none;
     border-bottom: 1px solid #e6e6e6;
 }
-.accordion-one .panel-heading h6 a {
+.accordion-one .panel-heading h6 a{
     color: #232323;
     padding: 15px 25px 15px 0;
     display: block;
@@ -1899,8 +1928,13 @@ body .theme-button-one:hover {
     background-color: #707d9e;
 }
 .theme-inner-banner .overlay {
-    background: rgb(10,136,161);
-    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
+    background: rgb(10, 136, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(10, 136, 161, 1) 0%,
+        rgba(7, 104, 150, 1) 49%,
+        rgba(4, 73, 133, 1) 100%
+    );
     text-align: center;
     padding: 110px 0 70px 0;
 }
@@ -1927,7 +1961,7 @@ body .theme-button-one:hover {
     color: #fff;
 }
 .why-we-best .theme-title-one h2:before {
-    background: #ced7ec;
+    background: #fff;
 }
 .why-we-best .theme-title-one p {
     color: #cad2e5;

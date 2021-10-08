@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Kalender;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -16,9 +18,20 @@ class AdminController extends Controller
         return view('admin.kalender');
     }
 
-    public function kalenderUpdate()
+    public function kalenderUpdate(Request $request)
     {
-        return view('admin.kalender');
+        $request->validate([
+            'kalender' => 'mimes:jpeg,png',
+        ]);
+        if (request()->hasFile('kalender')){
+            $kalender = new Kalender;
+            $kalender->bulan =  $request->get('bulan_kalender');
+            $image_name = 'Kalender '.$request->get('bulan_kalender') . '.png';
+            $kalender->nama_file = $image_name;
+            $kalender->save();
+            $request->kalender->storeAs('public/kalender', $image_name, ['disks' => 'public']);
+        }
+        return redirect()->back();
     }
 
     public function galeriShow()

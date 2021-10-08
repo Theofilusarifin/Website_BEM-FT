@@ -12,17 +12,17 @@
     <div class="our-solution section-spacing">
         <div class="container">
             <div class="theme-title-one">
-                <h2>Kalender Kegiatan Ormawa Fakultas Teknik Universitas Surabaya</h2>
+                <h2>Kalender Kegiatan Ormawa Fakultas Teknik</h2>
             </div>
             <div class="wrapper">
+                {{-- Kalender --}}
                 <div class="row">
-                    {{-- Kalender --}}
-                    <div class="col-lg-12 col-sm-6 col-12">
+                    <div class="col-lg-12 col-sm-12 col-12">
                         <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
-                            <img src="{{ asset('bemft_assets/images/home/20.jpg') }}" alt="Kalender" class="cover-img" />
+                            <img src="{{ asset('storage/kalender/'.$kalender->nama_file) }}" style="max-height:490px; width:auto;" alt="Kalender" class="cover-img" />
                         </div>
-                        <a class="d-flex justify-content-center align-items-center" href="{{ asset('bemft_assets/images/home/20.jpg') }}" download="Kalender Kegiatan Ormawa Teknik">
-                            <p style="text-align: justify; text-justify: inter-word;">Klik disini untuk melakukan download kalender</p>
+                        <a class="d-flex justify-content-center align-items-center" href="{{ asset('storage/kalender/'.$kalender->nama_file) }}" download="Kalender Kegiatan Ormawa Teknik">
+                            <button class="theme-button-one mt-3">Download Kalender</button>
                         </a>
                     </div>
                 </div>

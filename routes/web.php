@@ -18,8 +18,8 @@ Route::get('/tour', 'TourController@index')->name('tour');
 Route::post('/tour', 'TourController@show')->name('tour.show');
 Route::view('/gform', 'gform')->name('gform');
 
-// ROUTE EVENT
-Route::view('/event', 'kalender')->name('event');
+// ROUTE Kalender
+Route::get('/event', 'KalenderController@index')->name('event');
 
 // ROUTE ORMAWA FT
 Route::get('/profil/ormawa', 'OrmawaController@index')->name('ormawa');

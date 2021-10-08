@@ -88,7 +88,7 @@
 					<div class="col-lg-8 col-sm-12 col-12">
 						<div class="single-solution-block">
 							<img src="{{ asset('bemft_assets/images/icon/vision.png') }}" alt="visi" class="icon">
-							<h5><p>Visi</p></h5>
+							<h5><p></p></h5>
 							<p style="text-align: justify;">Menjadikan Badan Eksekutif Mahasiswa Fakultas Teknik sebagai organisasi pelopor mahasiswa dalam menyalurkan bakat secara inklusif, apresiatif, dan harmonis dengan menanamkan nilai PERMATA (Pioneer, Bersih, Semangat Pagi, Satu, dan Tangguh)</p>
 						</div>
 					</div>
@@ -285,7 +285,7 @@
 			<div class="theme-title-one">
 				<h2>Galeri</h2>
 				@if(count($galleris))
-					<p>Berikut ini adalah dokumentasi dari proker-proker BEM Fakultas Teknik</p>
+					<p>Berikut ini adalah dokumentasi dari program kerja BEM Fakultas Teknik</p>
 				@else
 					<p>Belum ada dokumentasi kegiatan untuk saat ini.</p>
 				@endif
