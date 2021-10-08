@@ -102,7 +102,7 @@
                     setTimeout(function(){
                         $('.loader').hide();
                         $('.faq-section').show();
-                    }, 1500);
+                    }, 1000);
                 },
                 success: function(data){
                     $.each(data.gedung, function(key,value){

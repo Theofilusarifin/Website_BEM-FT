@@ -361,7 +361,7 @@ h6 a,
 .shop-page .single-product .product-name .add-to-cart a,
 .shop-details .product-details .product-info .price,
 .faq-page .panel-group .panel-heading h6 a:before {
-    color: #001a57;
+    color: #076896;
 }
 .p-bg-color,
 .scroll-top,
@@ -385,7 +385,7 @@ h6 a,
 .theme-pagination ul li.active a,
 .blog-sidebar .sidebar-tags ul li.active a,
 .blog-sidebar .sidebar-tags ul li a:hover {
-    background: #001a57;
+    background: #076896;
 }
 .header-one .top-header .address-wrapper .quotes a,
 #theme-main-banner .camera_pag .camera_pag_ul li,
@@ -395,7 +395,7 @@ h6 a,
 .blog-sidebar .sidebar-tags ul li a:hover,
 .shop-page .single-product:hover .image-box {
     border-style: solid;
-    border-color: #001a57;
+    border-color: #076896;
 }
 /*----------------- Theme button ------------------*/
 body .theme-button-one {
@@ -408,7 +408,7 @@ body .theme-button-one {
     padding: 0 35px;
 }
 body .theme-button-one:hover {
-    background: #000f32;
+    background: #044985;
 }
 /*------------------- Theme Title ------------------*/
 .theme-title-one {
@@ -1325,7 +1325,7 @@ body .theme-button-one:hover {
 }
 .theme-footer-one .top-footer .footer-newsletter .theme-button-one:hover {
     color: #fff;
-    background: #001138;
+    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
 }
 .theme-footer-one .top-footer .footer-newsletter ::-webkit-input-placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -1380,7 +1380,8 @@ body .theme-button-one:hover {
 }
 /*---------------------- Theme footer Two ------------------*/
 .theme-footer-two {
-    background: #001648;
+    background: rgb(4,73,133);
+    background: linear-gradient(90deg, rgba(4,73,133,1) 0%, rgba(3,52,94,1) 100%);
     padding-top: 75px;
 }
 .theme-footer-two .logo-widget p {
@@ -1481,8 +1482,8 @@ body .theme-button-one:hover {
 }
 /*----------------- CallOut Banner  --------------*/
 .callout-banner {
-    background-color: #001a57;
-    background-image: url(../images/home/pattern2.png);
+    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
+    /* background-image: url(../images/home/pattern2.png); */
     padding: 40px 0;
 }
 .callout-banner .title {
@@ -1495,7 +1496,7 @@ body .theme-button-one:hover {
     float: left;
     color: #a9b3c8;
     padding-left: 70px;
-    width: 55%;
+    width: 75%;
     position: relative;
 }
 .callout-banner p:before {
@@ -1515,7 +1516,7 @@ body .theme-button-one:hover {
 }
 .callout-banner .theme-button-one:hover {
     color: #fff;
-    background: #000f32;
+    background: #044985;
 }
 .callout-banner.no-bg {
     background: none;
@@ -1562,7 +1563,8 @@ body .theme-button-one:hover {
     background-color: #707d9e;
 }
 .about-compnay-two .overlay {
-    background: rgba(0, 26, 87, 0.8);
+    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
+    padding: 100px 0;
     padding: 100px 0;
 }
 .about-compnay-two .theme-title-one {
@@ -1640,7 +1642,7 @@ body .theme-button-one:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 26, 87, 0.6);
+    background: linear-gradient(90deg, rgba(10,136,161,0.7) 0%, rgba(7,104,150,0.7) 49%, rgba(4,73,133,0.7) 100%);
     border-radius: 5px;
     -webkit-transform: scale(1, 0);
     transform: scale(1, 0);
@@ -1699,7 +1701,8 @@ body .theme-button-one:hover {
 }
 /*------------------- Faq Section -------------------*/
 .faq-section .overlay {
-    background: rgba(0, 26, 87, 0.9);
+    background: rgb(10,136,161);
+    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
     padding: 95px 0 95px 0;
     height: auto;
     margin-bottom: 70px;
@@ -1896,7 +1899,8 @@ body .theme-button-one:hover {
     background-color: #707d9e;
 }
 .theme-inner-banner .overlay {
-    background: rgba(0, 26, 87, 0.8);
+    background: rgb(10,136,161);
+    background: linear-gradient(90deg, rgba(10,136,161,1) 0%, rgba(7,104,150,1) 49%, rgba(4,73,133,1) 100%);
     text-align: center;
     padding: 110px 0 70px 0;
 }
