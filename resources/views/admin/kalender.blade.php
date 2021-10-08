@@ -17,14 +17,10 @@
                 <form method="POST" action="{{ route('admin.kalender.update') }}" class="form-validation" autocomplete="off" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row d-flex justify-content-center align-items-center">
-                        <div class="col-sm-6 col-12">
-                            <label for="bulan_kalender" class="form-label">Pilih bulan kalender</label>
-                        </div>
-                    </div>
-                    <div class="form-group row d-flex justify-content-center align-items-center">
-                        <div class="col-sm-6 col-12">
-                            <select class="form-select" aria-label="Bulan Kalender" name="bulan_kalender" id="bulan_kalender">
-                                <option selected>Pilih bulan kalender</option>
+                        <div class="col-sm-8 col-12">
+                            <label for="bulan_kalender" class="form-label">Masukkan bulan kalender</label>
+                            <input class="form-control" list="list_bulan_kalender" name="bulan_kalender" id="bulan_kalender" placeholder="Click to choose">
+                            <datalist id="list_bulan_kalender">
                                 <option value="Januari">Januari</option>
                                 <option value="Februari">Februari</option>
                                 <option value="Maret">Maret</option>
@@ -37,11 +33,11 @@
                                 <option value="Oktober">Oktober</option>
                                 <option value="November">November</option>
                                 <option value="Desember">Desember</option>
-                            </select>
+                            </datalist>
                         </div>
                     </div>
                     <div class="form-group row d-flex justify-content-center align-items-center">
-                        <div class="col-sm-6 col-12">
+                        <div class="col-sm-8 col-12">
                             <label for="kalender" class="form-label">Masukkan gambar kalender</label>
                             <input class="form-control" type="file" name="kalender" id="kalender">
                         </div>

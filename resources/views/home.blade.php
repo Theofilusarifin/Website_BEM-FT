@@ -36,7 +36,7 @@
 	
 	{{-- Call To Action --}}
 	<div class="callout-banner section-spacing">
-		<div class="container clearfix d-flex align-items-center">
+		<div class="container clearfix">
 			<h3 class="title">Provide solutions for the realiable growth</h3>
 			<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to ever wondered the east side to a deluxe apartment.</p>
 		</div>
@@ -80,7 +80,7 @@
 	<div class="our-solution section-spacing">
 		<div class="container">
 			{{-- Visi --}}
-			<div class="theme-title-one">
+			<div class="theme-title-one" style="margin-bottom:-30px">
 				<h2>VISI</h2>
 			</div>
 			<div class="wrapper mb-5">
@@ -96,7 +96,7 @@
 			</div>
 
 			{{-- Misi --}}
-			<div class="theme-title-one">
+			<div class="theme-title-one" style="margin-bottom:-30px">
 				<h2>MISI</h2>
 			</div>
 			<div class="wrapper">
