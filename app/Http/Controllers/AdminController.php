@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Galeri;
 use App\Kalender;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class AdminController extends Controller
 {
@@ -34,13 +36,31 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
-    public function galeriShow()
+    public function galeriAddShow()
     {
-        return view('admin.galeri');
+        return view('admin.galeri.add');
     }
 
-    public function galeriUpdate()
+    public function galeriStore(Request $request)
     {
-        return view('admin.galeri');
+        $request->validate([
+            'foto_proker' => 'mimes:jpeg,png',
+        ]);
+        if (request()->hasFile('foto_proker')){
+            $galeri = new Galeri();
+            $galeri->nama =  $request->get('nama_proker');
+            $galeri->nama_singkatan =  $request->get('nama_proker_singkatan');
+            $galeri->slug = Str::slug($request->get('nama_proker'));
+            $galeri->tanggal = $request->get('tanggal_acara');
+            $galeri->deskripsi = $request->get('deskripsi');
+            $galeri->save();
+            $request->foto_proker->storeAs('public/galeri', $request->get('nama_proker_singkatan').'.png', ['disks' => 'public']);
+        }
+        return redirect()->back();
+    }
+    public function galeriEditShow(){
+        return view('admin.galeri.edit');
+    }
+    public function galeriEditUpdate(){
     }
 }

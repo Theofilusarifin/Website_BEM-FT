@@ -1,164 +1,59 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- 
-			=============================================
-				Theme Inner Banner
-			============================================== 
-			-->
-			<div class="theme-inner-banner section-spacing">
-				<div class="overlay">
-					<div class="container">
-						<h2>Galeri</h2>
-					</div> <!-- /.container -->
-				</div> <!-- /.overlay -->
-			</div> <!-- /.theme-inner-banner -->
 
-
-			<!-- 
-			=============================================
-				Our Case
-			============================================== 
-			-->
-			<div class="our-case our-project section-spacing">
-				<div class="container">
-					<div class="wrapper">
-						<div class="row">
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-							<div class="col-lg-4 col-sm-6 col-12">
-								<div class="single-case-block">
-									<img src="{{ asset('bemft_assets/images/portfolio/1.jpg') }}" alt="">
-									<div class="hover-content">
-										<div class="text clearfix">
-											<div class="float-left">
-												<h5><a href="project-details.html">Business Meeting</a></h5>
-												<p>Explore strange new worlds</p>
-											</div>
-											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-										</div> <!-- /.text -->
-									</div> <!-- /.hover-content -->
-								</div> <!-- /.single-case-block -->
-							</div> <!-- /.col- -->
-						</div> <!-- /.row -->
-					</div> <!-- /.wrapper -->
-					<div class="theme-pagination text-center">
-						<ul>
-							<li><a href="#">1</a></li>
-							<li class="active"><a href="#">2</a></li>
-							<li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
-						</ul>
+	<div class="theme-inner-banner section-spacing">
+		<div class="overlay">
+			<div class="container">
+				<h2>Galeri</h2>
+			</div>
+		</div>
+	</div>
+	@if($galeris->count())
+		<div class="our-solution section-spacing mt-5">
+			<div class="container">
+				<div class="theme-title-one">
+					<h2>Dokumentasi Program Kerja BEM Fakultas Teknik</h2>
+				</div>
+			</div>
+		</div>
+		<div class="our-case our-project section-spacing">
+			<div class="container">
+				<div class="wrapper mb-4">
+					<div class="row">
+						@foreach($galeris as $galeri)
+						<div class="col-lg-4 col-sm-6 col-12">
+							<div class="single-case-block">
+								<img src="{{ asset('storage/galeri/'.$galeri->nama_singkatan.'.png') }}" alt="Foto Galeri">
+								<div class="hover-content">
+									<div class="text clearfix">
+										<div class="float-left">
+											<h5><a href="{{ $galeri->slug }}">{{ $galeri->nama }}</a></h5>
+											<p>{{ $galeri->deskripsi }}</p>
+										</div>
+										<a href="{{ $galeri->slug }}" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						@endforeach
 					</div>
-				</div> <!-- /.container -->
-			</div> <!-- /.our-case -->
+				</div>
+				{{-- Pagination --}}
+				<div class="d-flex justify-content-center">
+					<div>
+						{{ $galeris->links() }}
+					</div>
+				</div>
+			</div>
+		</div>
+	@else
+		<div class="our-solution section-spacing mt-5">
+			<div class="container">
+				<div class="theme-title-one">
+					<h4>Belum ada dokumentasi kegiatan untuk saat ini</h4>
+				</div>
+			</div>
+		</div>
+	@endif
 @endsection

@@ -16,7 +16,10 @@
                         <a href="{{ route('admin.kalender.show') }}">Edit Kalender</a>
                     </li>
                     <li class="{{ request()->is('admin/galeri') ? 'active' : '' }}">
-                        <a href="{{ route('admin.galeri.show') }}">Edit Galeri</a>
+                        <a href="{{ route('admin.galeri.show') }}">Tambah Galeri</a>
+                    </li>
+                    <li class="{{ request()->is('admin/galeri/update') ? 'active' : '' }}">
+                        <a href="{{ route('galeri.show') }}">Edit Galeri</a>
                     </li>
                 </li>
                 <li class="nav-item dropdown">

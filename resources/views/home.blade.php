@@ -287,7 +287,7 @@
 				@if(count($galleris))
 					<p>Berikut ini adalah dokumentasi dari program kerja BEM Fakultas Teknik</p>
 				@else
-					<p>Belum ada dokumentasi kegiatan untuk saat ini.</p>
+					<p>Belum ada dokumentasi kegiatan untuk saat ini</p>
 				@endif
 			</div>
 			<div class="wrapper">
@@ -298,7 +298,7 @@
 								<div class="item">
 									<div class="single-blog">
 										<div class="image-box">
-											<img src="{{ asset('bemft_assets/images/galleri/'.$galleri->nama_singkatan.'jpg') }}" alt="Dokumentasi Program Kerja">
+											<img src="{{ asset('storage/galeri/'.$galleri->nama_singkatan.'.png') }}" style="max-height:260px; width:auto;" alt="Dokumentasi Program Kerja">
 											<div class="overlay"><a href="#" class="date">{{ $galleri->tanggal }}</a></div>
 										</div>
 										<div class="post-meta">

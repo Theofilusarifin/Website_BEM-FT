@@ -20,6 +20,9 @@
 		<link rel="stylesheet" type="text/css" href="{{ asset('bemft_assets/css/style.css') }}">
 		<!-- responsive style sheet -->
 		<link rel="stylesheet" type="text/css" href="{{ asset('bemft_assets/css/responsive.css') }}">
+		
+		@yield('link')
+
 		@yield('style')
 	</head>
 

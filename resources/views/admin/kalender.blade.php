@@ -19,7 +19,7 @@
                     <div class="form-group row d-flex justify-content-center align-items-center">
                         <div class="col-sm-8 col-12">
                             <label for="bulan_kalender" class="form-label">Masukkan bulan kalender</label>
-                            <input class="form-control" list="list_bulan_kalender" name="bulan_kalender" id="bulan_kalender" placeholder="Click to choose">
+                            <input class="form-control" list="list_bulan_kalender" name="bulan_kalender" id="bulan_kalender" placeholder="Click to choose" required autofocus>
                             <datalist id="list_bulan_kalender">
                                 <option value="Januari">Januari</option>
                                 <option value="Februari">Februari</option>
@@ -38,8 +38,8 @@
                     </div>
                     <div class="form-group row d-flex justify-content-center align-items-center">
                         <div class="col-sm-8 col-12">
-                            <label for="kalender" class="form-label">Masukkan gambar kalender</label>
-                            <input class="form-control" type="file" name="kalender" id="kalender">
+                            <label for="kalender" class="form-label">Masukkan gambar kalender (870 x 490 px)</label>
+                            <input class="form-control" type="file" name="kalender" id="kalender" required>
                         </div>
                     </div>
                     <button type="submit" class="theme-button-one mt-5" style="margin:auto">Submit</button>

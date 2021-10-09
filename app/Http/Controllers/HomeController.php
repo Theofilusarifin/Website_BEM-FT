@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $galleris = Galeri::limit(3)->get();
+        $galleris = Galeri::latest('id')->limit(5)->get();
         return view('home', compact('galleris'));
     }
 }
