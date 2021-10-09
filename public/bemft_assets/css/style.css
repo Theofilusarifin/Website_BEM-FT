@@ -1435,10 +1435,10 @@ body .theme-button-one:hover {
 .theme-footer-two .top-footer .footer-list ul li a {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 17px;
-    color: #9ca6bf;
+    color: #fff;
 }
 .theme-footer-two .top-footer .footer-list ul li a:hover {
-    color: #fff;
+    color: #9ca6bf;
 }
 .theme-footer-two .top-footer .footer-gallery .wrapper {
     padding: 11px 45px 0 0;
@@ -1462,7 +1462,7 @@ body .theme-button-one:hover {
 .theme-footer-two .top-footer .contact-widget ul li {
     font-size: 17px;
     line-height: 25px;
-    color: #9ca6bf;
+    color: #fff;
     position: relative;
     padding: 5px 0 12px 40px;
 }
@@ -1471,6 +1471,9 @@ body .theme-button-one:hover {
 }
 .theme-footer-two .top-footer .contact-widget ul li a {
     font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+}
+.theme-footer-two .top-footer .contact-widget ul li a:hover {
     color: #9ca6bf;
 }
 .theme-footer-two .top-footer .contact-widget ul li i {
@@ -1487,7 +1490,7 @@ body .theme-button-one:hover {
 }
 .theme-footer-two .bottom-footer p {
     font-size: 17px;
-    color: #9ca6bf;
+    color: #fff;
 }
 /*----------------- CallOut Banner  --------------*/
 .callout-banner {
