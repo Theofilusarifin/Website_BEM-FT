@@ -28,10 +28,10 @@
 								<div class="hover-content">
 									<div class="text clearfix">
 										<div class="float-left">
-											<h5><a href="{{ $galeri->slug }}">{{ $galeri->nama }}</a></h5>
+											<h5><a href="{{ 'galeri/'.$galeri->slug }}">{{ $galeri->nama }}</a></h5>
 											<p>{{ $galeri->deskripsi }}</p>
 										</div>
-										<a href="{{ $galeri->slug }}" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										<a href="{{ 'galeri/'.$galeri->slug }}" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 									</div>
 								</div>
 							</div>

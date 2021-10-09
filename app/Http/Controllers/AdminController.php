@@ -51,7 +51,7 @@ class AdminController extends Controller
             $galeri->nama =  $request->get('nama_proker');
             $galeri->nama_singkatan =  $request->get('nama_proker_singkatan');
             $galeri->slug = Str::slug($request->get('nama_proker'));
-            $galeri->tanggal = $request->get('tanggal_acara');
+            $galeri->created_at = $request->get('tanggal_acara');
             $galeri->deskripsi = $request->get('deskripsi');
             $galeri->save();
             $request->foto_proker->storeAs('public/galeri', $request->get('nama_proker_singkatan').'.png', ['disks' => 'public']);

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Galeri extends Model
 {
     protected $fillable = [
-        'nama', 'nama_singkatan', 'slug', 'tanggal', 'deskripsi',
+        'nama', 'nama_singkatan', 'slug', 'created_at', 'deskripsi',
     ];
     public $timestamps = false;
 }
