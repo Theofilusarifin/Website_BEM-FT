@@ -23,8 +23,8 @@
                             <p style="text-align: justify; text-justify: inter-word;">{{ $galeri->deskripsi }}</p>
                             @isset($galeri->created_at)
                                 <div class="d-flex m-0 p-0 my-3">
-                                    <img src="{{ asset('bemft_assets/images/icon/calendar.png') }}" class="mr-3 image-fluid" style="max-height:25px; height 25px; width:auto" alt="Instagram">
-                                    <p>{{ date("M d, Y",strtotime($galeri-> created_at)) }}</p>
+                                    <img src="{{ asset('bemft_assets/images/icon/calendar.png') }}" class="mr-3 image-fluid" style="max-height:25px; height 25px; width:auto" alt="Calendar">
+                                    <p>{{ date("M d, Y",strtotime($galeri->created_at)) }}</p>
                                 </div>
                             @endisset
                         </div>
