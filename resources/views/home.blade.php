@@ -4,21 +4,21 @@
 
 	{{-- Banner Beranda --}}
 	<div id="theme-main-banner" class="banner-one">
-		<div data-src="{{ asset('bemft_assets/images/home/slide-5.jpg') }}">
+		<div data-src="{{ asset('bemft_assets/images/home/1.png') }}">
 			<div class="camera_caption">
 				<div class="container">
 					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
 					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
-					<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">CLICK HERE</a>
 				</div> 
 			</div>
 		</div>
-		<div data-src="{{ asset('bemft_assets/images/home/slide-3.jpg') }}">
+		<div data-src="{{ asset('bemft_assets/images/home/2.png') }}">
 			<div class="camera_caption">
 				<div class="container">
 					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
 					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
-					<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">CLICK HERE</a>
 				</div> 
 			</div>
 		</div>
@@ -27,7 +27,7 @@
 				<div class="container">
 					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
 					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
-					<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">Click Here</a>
 				</div>
 			</div>
 		</div>
