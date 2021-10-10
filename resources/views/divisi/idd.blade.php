@@ -43,7 +43,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/idd/hanny.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Hanny Wijaya</h6>
@@ -54,7 +54,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/idd/angelica.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Angelica</h6>
@@ -69,7 +69,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/idd/rafli.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Moch. Rafli R. P. W.</h6>
@@ -80,7 +80,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/idd/gwen.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Gwendolyn Anna B. B.</h6>
@@ -91,7 +91,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/idd/jessica.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Jessica Yolanda</h6>

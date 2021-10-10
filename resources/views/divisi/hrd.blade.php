@@ -43,7 +43,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/hrd/reynard.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Reynard Nathanael</h6>
@@ -54,7 +54,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/hrd/arden.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Christopher Arden</h6>
@@ -69,7 +69,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/hrd/monica.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Monica Natalia</h6>
@@ -80,7 +80,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/hrd/yabes.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Antonius Yabes S.</h6>
@@ -91,7 +91,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/hrd/ariq.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Ariq Al Khasyi</h6>
@@ -102,7 +102,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/hrd/alvin.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Alvin Renaldo W.</h6>

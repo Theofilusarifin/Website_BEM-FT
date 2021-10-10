@@ -51,7 +51,7 @@
 					<div class="col-lg-3 col-sm-6 col-12">
 						<div class="team-member">
 							<div class="image-box">
-								<img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+								<img src="{{ asset('bemft_assets/images/anggota/bph/fauzi.png') }}" alt="">
 							</div>
 							<div class="text">
 								<h6 class="mb-2">Achmad Fauzi Bagus</h6>
@@ -62,7 +62,7 @@
 					<div class="col-lg-3 col-sm-6 col-12">
 						<div class="team-member">
 							<div class="image-box">
-								<img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+								<img src="{{ asset('bemft_assets/images/anggota/bph/eunike.png') }}" alt="">
 							</div>
 							<div class="text">
 								<h6 class="mb-2">Eunike Putri Permatasari</h6>

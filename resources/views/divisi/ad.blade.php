@@ -43,7 +43,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/ad/robbel.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Robbel Putra Halim</h6>
@@ -54,7 +54,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/ad/dhita.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Nunung Mardhita R. P.</h6>
@@ -69,7 +69,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/ad/angel.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Evangeline Alicia T.</h6>
@@ -80,7 +80,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/ad/tiffany.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Tiffany Chandra</h6>
@@ -91,7 +91,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 p-4">
                         <div class="team-member">
                             <div class="image-box">
-                                <img src="{{ asset('bemft_assets/images/team/1.jpg') }}" alt="">
+                                <img src="{{ asset('bemft_assets/images/anggota/ad/rivaldo.jpeg') }}" alt="">
                             </div>
                             <div class="text">
                                 <h6 class="mb-2">Rivaldo Tan</h6>
