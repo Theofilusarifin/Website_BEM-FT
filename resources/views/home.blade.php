@@ -7,17 +7,15 @@
 		<div data-src="{{ asset('bemft_assets/images/home/1.png') }}">
 			<div class="camera_caption">
 				<div class="container">
-					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
-					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
-					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">CLICK HERE</a>
+					<h1 class="wow fadeInUp animated" style="color:#fff" data-wow-delay="0.2s">Selamat Datang Di <br> WEBSITE BEM FT UBAYA</h1>
 				</div> 
 			</div>
 		</div>
 		<div data-src="{{ asset('bemft_assets/images/home/2.png') }}">
 			<div class="camera_caption">
 				<div class="container">
-					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
-					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
+					<p class="wow fadeInUp animated" style="color:#f6f6f6">Jelajahi Fakultas Teknik Secara Virtual</p>
+					<h1 class="wow fadeInUp animated" style="color:#fff" data-wow-delay="0.2s">Campus Tour</h1>
 					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">CLICK HERE</a>
 				</div> 
 			</div>
@@ -35,17 +33,22 @@
 	{{-- End Of Banner Beranda --}}
 	
 	{{-- Call To Action --}}
-	<div class="callout-banner section-spacing">
+	{{-- <div class="callout-banner section-spacing">
 		<div class="container clearfix">
-			<h3 class="title">Provide solutions for the realiable growth</h3>
+			<h3 class="title">Website Official BEM FT UBAYA</h3>
 			<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to ever wondered the east side to a deluxe apartment.</p>
 		</div>
-	</div>
+	</div> --}}
 	{{-- End Of Call To Action --}}
 
+	<div class="section-spacing"></div>
 	{{-- Foto Gubem Wagubem --}}
+
 	<div class="our-team section-spacing">
 		<div class="container">
+			<div class="theme-title-one" style="margin-bottom:-30px">
+				<h2>GUBERNUR & WAKIL GUBERNUR<br>FAKULTAS TEKNIK 2021/2022</h2>
+			</div>
 			<div class="wrapper">
 				<div class="row d-flex justify-content-center align-items-center">
 					<div class="col-lg-3 col-sm-6 col-12">

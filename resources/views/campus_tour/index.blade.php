@@ -3,11 +3,7 @@
 @section('style')
     <style>    
         .faq-section .wrapper .img-box {
-            background: url(../bemft_assets/images/home/13.jpg) no-repeat center center; /* Size : 585 x 500 */
-            background-size: cover;
-            border-radius: 5px 0 0 5px;
-            position: relative;
-            height: 500px;
+            height:500px;
         }
         .loader{
             display: none;
@@ -61,8 +57,8 @@
                         <h3 id="nama_gedung">Gedung TA</h3>
                     </div>
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-6 col-lg-5">
-                            <div class="img-box" id="video_gedung">
+                        <div class="col-xl-6 col-lg-5" id="video_gedung">
+                            <div class="img-box" style="background:url(../bemft_assets/images/gedung/TA.jpeg); background-reperat:no-repeat; background-size: cover; border-radius: 5px; position: relative;">
                                 <a data-fancybox href="{{ $item->link_youtube }}" class="play">
                                     <i class="fa fa-play" aria-hidden="true"></i>
                                 </a>
@@ -107,9 +103,11 @@
                 success: function(data){
                     $.each(data.gedung, function(key,value){
                         $("h3#nama_gedung").html("Gedung "+data.gedung[key].nama);
-                        $("div#video_gedung").html(`<a data-fancybox href="`+data.gedung[key].link_youtube+`" class="play">
-                                                    <i class="fa fa-play" aria-hidden="true"></i>
-                                                    </a>`);
+                        $("div#video_gedung").html(`<div class="img-box" style="background:url(../bemft_assets/images/gedung/`+data.gedung[key].nama+`.jpeg); background-reperat:no-repeat; background-size: cover; border-radius: 5px; position: relative;">
+                                                        <a data-fancybox href="`+data.gedung[key].link_youtube+`" class="play">
+                                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>`);
                         $("p#deskripsi_gedung").html(data.gedung[key].deskripsi);
                     })
                 }, 

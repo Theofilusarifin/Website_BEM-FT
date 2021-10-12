@@ -89,7 +89,7 @@
   .about-compnay-two .quote-form {margin-top: 40px;}
   .faq-section,.faq-section .overlay,.why-we-best,.why-we-best .overlay {height: auto;}
   .faq-section .overlay,.why-we-best .overlay {padding: 60px 0;}
-  .faq-section .wrapper .img-box,.why-we-best .wrapper .img-box,.contact-us-section .img-box {height: 250px;border-radius: 5px 5px 0 0;}
+  .faq-section .wrapper .img-box,.why-we-best .wrapper .img-box,.contact-us-section .img-box {height: 250px !important;border-radius: 5px 5px 0 0;}
   .faq-section .wrapper .faq-content,.why-we-best .wrapper .best-list-item,.contact-us-section .form-wrapper {border-radius: 0 0 5px 5px;}
   .short-banner .overlay h2 {width: 100%;}
   .theme-footer-two {padding-top: 60px;}
@@ -110,7 +110,7 @@
   .theme-footer-one .bottom-footer ul li a {margin-left: 20px;}
   .blog-details .single-blog .post-meta .mark-text .inner-text {padding-top: 80px;}
   .blog-details .single-blog .post-meta .mark-text .inner-text:before {top:10px;}
-  #theme-main-banner {height: 600px !important;}
+  #theme-main-banner {height: 780px !important;}
 }
 /*(min-width: 768px) and (max-width: 991px)*/
 
@@ -145,7 +145,7 @@
 @media (min-width: 576px) and (max-width: 767px) {
   .header-two .top-header .social-icon li:first-child {margin-left: 0;}
   .our-case .single-case-block .hover-content .text {padding: 0;}
-  #theme-main-banner {height: 500px !important;}
+  #theme-main-banner {height: 780px !important;}
   #theme-main-banner .camera_caption p {font-size: 20px;}
   #theme-main-banner .camera_caption h1 {font-size: 50px;line-height: 60px;}
 }
@@ -189,7 +189,7 @@
   .shop-details .product-details .product-tab {min-height: 290px;}
   .shop-details .product-details .product-info .title {font-size: 22px;}
   .blog-details .share-option ul {width: 100%;}
-  #theme-main-banner {height: 400px !important;}
+  #theme-main-banner {height: 780px !important;}
   #theme-main-banner .camera_caption p {font-size: 18px;}
   #theme-main-banner .camera_caption h1 {font-size: 35px;line-height: 46px;padding: 12px 0 18px 0;}
 }
