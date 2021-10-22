@@ -29,6 +29,10 @@ Route::get('/profil/ormawa/{ormawa:slug}', 'OrmawaController@show')->name('ormaw
 Route::get('/galeri', 'GaleriController@index')->name('galeri');
 Route::get('/galeri/{id}', 'GaleriController@show')->name('galeri.show');
 
+// ROUTE PENGUMUMAN
+Route::get('/pengumuman', 'PengumumanController@index')->name('pengumuman');
+Route::get('/pengumuman/{id}', 'PengumumanController@show')->name('pengumuman.show');
+
 // ROUTE ADMIN
 Auth::routes();
 Route::prefix('admin')->middleware('auth')->group(function(){

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Pengumuman;
 use Illuminate\Http\Request;
 
-class GaleriController extends Controller
+class PengumumanController extends Controller
 {
     public function index(){
         $pengumumans = Pengumuman::latest()->paginate(9);
