@@ -9,6 +9,34 @@
                 </div>
             </div>
         </div>
+
+        <div class="blog-inner-page section-spacing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-8 col-12 our-blog">
+                        <div class="post-wrapper">
+                            <div class="single-blog">
+                                <div class="image-box">
+                                    <img src="{{asset('/storage/pengumuman' .'/'.$pengumuman->judul.'.png')}}" alt="Foto Pengumuman">
+                                    @isset($pengumuman->created_at)
+                                    <div class="overlay">
+                                        <a href="#" class="date">{{ date("M d, Y",strtotime($pengumuman->created_at)) }}</a>
+                                    </div>
+                                    @endisset
+                                </div>
+                                <div class="post-meta">
+                                    <h5>{{ $pengumuman->judul }}</h5>
+                                    <p>{{ $pengumuman->isi }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endforeach
+@endsection
+        <!--
         <div class="about-compnay-two no-bg section-spacing">
             <div class="overlay">
                 <div class="container">
@@ -32,5 +60,4 @@
                 </div>
             </div>
         </div>
-    @endforeach
-@endsection
+        -->

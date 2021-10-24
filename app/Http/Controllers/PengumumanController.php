@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PengumumanController extends Controller
 {
     public function index(){
-        $pengumumans = Pengumuman::latest()->paginate(9);
+        $pengumumans = Pengumuman::latest()->paginate(3);
         return view('pengumuman.index', compact('pengumumans'));
     }
 

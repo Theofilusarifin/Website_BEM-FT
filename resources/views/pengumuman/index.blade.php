@@ -24,7 +24,7 @@
 							</div>
 							<div class="post-meta">
 								<h5><a href="{{ 'pengumuman/'.$pengumuman->slug }}">{{ $pengumuman->judul }}</a></h5>
-								<p>{{ $pengumuman->isi }}</p>
+								<p>{{ substr_replace($pengumuman->isi, "...", 178) }}</p>
 								<a href="{{ 'pengumuman/'.$pengumuman->slug }}" class="read-more">READ MORE</a>
 							</div>
 						</div>
