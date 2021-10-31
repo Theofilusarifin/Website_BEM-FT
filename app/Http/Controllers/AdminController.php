@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Galeri;
 use App\Kalender;
+use App\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -62,5 +63,26 @@ class AdminController extends Controller
         return view('admin.galeri.edit');
     }
     public function galeriEditUpdate(){
+    }
+    public function pengumumanStore(Request $request)
+    {
+        $request->validate([
+            'foto_pengumuman' => 'mimes:jpeg,png',
+        ]);
+        if (request()->hasFile('foto_pengumuman')){
+            $pengumuman = new Pengumuman();
+            $pengumuman->judul =  $request->get('judul_pengumuman');
+            $pengumuman->slug = Str::slug($request->get('judul_pengumuman'));
+            $pengumuman->created_at = $request->get('tanggal_pengumuman');
+            $pengumuman->isi = $request->get('isi');
+            $pengumuman->save();
+            $request->foto_proker->storeAs('public/pengumuman', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
+        }
+        return redirect()->back();
+    }
+    public function pengumumanEditShow(){
+        return view('admin.pengumuman.edit');
+    }
+    public function pengumumanEditUpdate(){
     }
 }
