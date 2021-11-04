@@ -1771,7 +1771,7 @@ body .theme-button-one:hover {
 }
 .faq-section .wrapper .faq-content {
     background: #fff;
-    border-radius: 0 60px 0 60px;
+    border-radius: 20px;
     padding: 43px 50px 60px 50px;
 }
 .accordion-one .panel-heading {

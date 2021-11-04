@@ -15,11 +15,27 @@
                     <li class="{{ request()->is('admin/kalender') ? 'active' : '' }}">
                         <a href="{{ route('admin.kalender.show') }}">Edit Kalender</a>
                     </li>
-                    <li class="{{ request()->is('admin/galeri') ? 'active' : '' }}">
-                        <a href="{{ route('admin.galeri.show') }}">Tambah Galeri</a>
+                    <li class="{{ request()->is('admin/galeri') ? 'active' : '' }}{{ request()->is('admin/galeri/update') ? 'active' : '' }}">
+                        <a style="pointer-events: none; cursor: default;" href="#">Galeri</a>
+                        <ul class="dropdown">
+                            <li class="">
+                                <a href="{{ route('admin.galeri.show') }}">Tambah Galeri</a>
+                            </li>
+                            <li class="">
+                                <a href="{{ route('galeri.show') }}">Edit Galeri</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="{{ request()->is('admin/galeri/update') ? 'active' : '' }}">
-                        <a href="{{ route('galeri.show') }}">Edit Galeri</a>
+                    <li class="{{ request()->is('admin/pengumuman') ? 'active' : '' }}{{ request()->is('admin/pengumuman/update') ? 'active' : '' }}">
+                        <a style="pointer-events: none; cursor: default;" href="#">Pengumuman</a>
+                        <ul class="dropdown">
+                            <li class="">
+                                <a href="{{ route('admin.pengumuman.show') }}">Tambah pengumuman</a>
+                            </li>
+                            <li class="">
+                                <a href="{{ route('pengumuman.show') }}">Edit pengumuman</a>
+                            </li>
+                        </ul>
                     </li>
                 </li>
                 <li class="nav-item dropdown">

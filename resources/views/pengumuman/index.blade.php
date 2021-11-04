@@ -13,18 +13,18 @@
 	@if($pengumumans->count())
 	<div class="blog-inner-page section-spacing">
 		<div class="container">
-			<div class="row">
+			<div class="row d-flex justify-content-center align-items-center">
 				@foreach($pengumumans as $pengumuman)
 				<div class="col-xl-9 col-lg-8 col-12 our-blog">
 					<div class="post-wrapper">
 						<div class="single-blog">
 							<div class="image-box">
-								<img src="{{ asset('storage/pengumuman/'.$pengumuman->judul.'.png') }}" alt="Foto Pengumuman">
-								<div class="overlay"><a href="#" class="date">Feb 06, 2018</a></div>
+								<img src="{{ asset('/'.$pengumuman->link_foto) }}" alt="Foto Pengumuman" style="height:auto; width:870px; max-width:870px;" class="cover-img" >
+								<div class="overlay"><a href="#" class="date">{{ $pengumuman->created_at }}</a></div>
 							</div>
 							<div class="post-meta">
 								<h5><a href="{{ 'pengumuman/'.$pengumuman->slug }}">{{ $pengumuman->judul }}</a></h5>
-								<p>{{ substr_replace($pengumuman->isi, "...", 178) }}</p>
+								<p>{{ substr_replace($pengumuman->isi, "...", 300) }}</p>
 								<a href="{{ 'pengumuman/'.$pengumuman->slug }}" class="read-more">READ MORE</a>
 							</div>
 						</div>

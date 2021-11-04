@@ -63,8 +63,12 @@ class AdminController extends Controller
         return view('admin.galeri.edit');
     }
     public function galeriEditUpdate(){
+        // Fungsi Update
     }
-    public function pengumumanStore(Request $request)
+    public function pengumumanAddShow(){
+        return view('admin.pengumuman.add');
+    }
+    public function pengumumanAddStore(Request $request)
     {
         $request->validate([
             'foto_pengumuman' => 'mimes:jpeg,png',
@@ -75,8 +79,10 @@ class AdminController extends Controller
             $pengumuman->slug = Str::slug($request->get('judul_pengumuman'));
             $pengumuman->created_at = $request->get('tanggal_pengumuman');
             $pengumuman->isi = $request->get('isi');
+            $link_pengumuman = 'storage/pengumuman/'.$request->get('judul_pengumuman').'.png';
+            $pengumuman->link_foto = $link_pengumuman;
             $pengumuman->save();
-            $request->foto_pengumuman->storeAs('public/pengumuman', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
+            $request->foto_pengumuman->storeAs('public/pengumuman/', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
         }
         return redirect()->back();
     }
@@ -84,5 +90,6 @@ class AdminController extends Controller
         return view('admin.pengumuman.edit');
     }
     public function pengumumanEditUpdate(){
+        // Fungsi update
     }
 }

@@ -13,12 +13,13 @@
                         <li><a href="{{ route('idd') }}">IDD</a></li>
                     </ul>
                 </li>
-                <li class="{{ request()->is('tour') ? 'active' : '' }}{{ request()->is('gform') ? 'active' : '' }}{{ request()->is('event') ? 'active' : '' }}">
+                <li class="{{ request()->is('tour') ? 'active' : '' }}{{ request()->is('gform') ? 'active' : '' }}{{ request()->is('event') ? 'active' : '' }}{{ request()->is('pengumuman') ? 'active' : '' }}">
                     <a style="pointer-events: none; cursor: default;" href="#">Info Mahasiswa</a>
                     <ul class="dropdown">
                         <li><a href="{{ route('event') }}">Kalender Kegiatan FT</a></li>
                         <li><a href="{{ route('tour') }}">Campus Tour</a></li>
                         <li><a href="{{ route('gform') }}">Gform Prestasi</a></li>
+                        <li><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
                     </ul>
                 </li>
                 <li class="{{ request()->is('profil/ormawa') ? 'active' : '' }}">

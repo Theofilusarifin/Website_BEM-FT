@@ -24,7 +24,7 @@
 						@foreach($galeris as $galeri)
 						<div class="col-lg-4 col-sm-6 col-12">
 							<div class="single-case-block">
-								<img src="{{ asset('storage/galeri/'.$galeri->nama_singkatan.'.png') }}" alt="Foto Galeri">
+								<img src="{{ asset('storage/galeri/'.$galeri->nama_singkatan.'.png') }}" alt="Foto Galeri" style="max-height:310px; width:auto;" class="cover-img" >
 								<div class="hover-content">
 									<div class="text clearfix">
 										<div class="float-left">

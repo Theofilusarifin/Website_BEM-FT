@@ -14,7 +14,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
-                            <img src="{{asset('/storage/galeri' .'/'.$galeri->nama_singkatan.'.png')}}" alt="Dokumentasi Kegiatan" style="height=300px; max-height:300px; width:auto" class="img-fluid">
+                            <img src="{{asset('/storage/galeri' .'/'.$galeri->nama_singkatan.'.png')}}" alt="Dokumentasi Kegiatan" style="height=310px; max-height:310px; width:auto" class="img-fluid">
                         </div>
                         <div class="col-lg-6 col-12 text">
                             <div class="theme-title-one">
