@@ -22,7 +22,7 @@
                         <li><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
                     </ul>
                 </li>
-                <li class="{{ request()->is('profil/ormawa') ? 'active' : '' }}">
+                <li class="{{ request()->is('profil/*') ? 'active' : '' }}">
                     <a href="{{ route('ormawa') }}">Ormawa FT</a>
                 </li>
                 <li class="{{ request()->is('galeri') ? 'active' : '' }}"><a href="{{ route('galeri') }}">Galeri</a></li>

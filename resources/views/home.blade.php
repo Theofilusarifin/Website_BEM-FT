@@ -248,7 +248,7 @@
 									<div class="panel">
 										<div class="panel-heading">
 											<h6 class="panel-title">
-												<a style="text-align:justify; text-justify:inter-word;" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$loop->index}}">
+												<a class="pr-5" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$loop->index}}">
 													{!!$faq['question']!!}
 												</a>
 											</h6>
@@ -290,12 +290,12 @@
 								<div class="item">
 									<div class="single-blog">
 										<div class="image-box">
-											<img src="{{ asset('storage/galeri/'.$galleri->nama_singkatan.'.png') }}" style="max-height:260px; width:auto;" alt="Dokumentasi Program Kerja">
+											<img src="{{ asset('/'.$galleri->link_foto) }}" style="max-height:260px; width:auto;" alt="Dokumentasi Program Kerja">
 											<div class="overlay"><a href="#" class="date">{{ $galleri->tanggal }}</a></div>
 										</div>
 										<div class="post-meta">
-											<h5 class="title"><a href="{{ $galleri->slug }}">{{ $galleri->nama }}</a></h5>
-											<a href="{{ $galleri->slug }}" class="read-more">{{ Str::limit($galleri->deskripsi, 80, '...') }}</a>
+											<h5 class="title"><a href="/galeri/{{ $galleri->slug }}">{{ $galleri->nama }}</a></h5>
+											<a href="/galeri/{{ $galleri->slug }}" class="read-more">{{ Str::limit($galleri->deskripsi, 80, '...') }}</a>
 										</div>
 									</div>
 								</div>

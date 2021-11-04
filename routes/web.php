@@ -42,9 +42,11 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/galeri', 'AdminController@galeriAddShow')->name('admin.galeri.show');
     Route::post('/galeri', 'AdminController@galeriStore')->name('admin.galeri.store');
     Route::get('/galeri/update', 'AdminController@galeriEditShow')->name('galeri.show');
+    Route::get('/galeri/update/{id}', 'AdminController@galeriEdit')->name('galeri.edit');
     Route::post('/galeri/update', 'AdminController@galeriEditUpdate')->name('galeri.update');
     Route::get('/pengumuman', 'AdminController@pengumumanAddShow')->name('admin.pengumuman.show');
     Route::post('/pengumuman', 'AdminController@pengumumanAddStore')->name('admin.pengumuman.store');
     Route::get('/pengumuman/update', 'AdminController@pengumumanEditShow')->name('pengumuman.show');
+    Route::get('/pengumuman/update/{id}', 'AdminController@pengumumanEdit')->name('pengumuman.edit');
     Route::post('/pengumuman/update', 'AdminController@pengumumanEditUpdate')->name('pengumuman.update');
 });

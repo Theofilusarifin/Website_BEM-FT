@@ -1,13 +1,21 @@
 @extends('layouts.admin_app')
 
 @section('content')
-    <div class="theme-inner-banner section-spacing">
+    <div class="theme-inner-banner">
 		<div class="overlay">
 			<div class="container">
 				<h2>Edit Kalender</h2>
 			</div>
 		</div>
 	</div>
+
+    @if ($message = Session::get('success'))
+    <div class="alert alert-success alert-block section-spacing">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>{{ $message }}</strong>
+    </div>
+    @endif
+
     <div class="contact-us-section">
         <div class="container">
             <div class="theme-title-one">
@@ -19,7 +27,12 @@
                     <div class="form-group row d-flex justify-content-center align-items-center">
                         <div class="col-sm-8 col-12">
                             <label for="bulan_kalender" class="form-label">Masukkan bulan kalender</label>
-                            <input class="form-control" list="list_bulan_kalender" name="bulan_kalender" id="bulan_kalender" placeholder="Click to choose" required autofocus>
+                            <input class="form-control @error('bulan_kalender') is-invalid @enderror" list="list_bulan_kalender" name="bulan_kalender" id="bulan_kalender" placeholder="Click to choose" autofocus>
+                            @error('bulan_kalender')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                             <datalist id="list_bulan_kalender">
                                 <option value="Januari">Januari</option>
                                 <option value="Februari">Februari</option>
@@ -39,7 +52,12 @@
                     <div class="form-group row d-flex justify-content-center align-items-center">
                         <div class="col-sm-8 col-12">
                             <label for="kalender" class="form-label">Masukkan gambar kalender (870 x 490 px)</label>
-                            <input class="form-control" type="file" name="kalender" id="kalender" required>
+                            <input class="form-control @error('kalender') is-invalid @enderror" type="file" name="kalender" id="kalender">
+                            @error('kalender')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                     </div>
                     <button type="submit" class="theme-button-one mt-5" style="margin:auto">Submit</button>

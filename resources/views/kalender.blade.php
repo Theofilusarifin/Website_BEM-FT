@@ -21,7 +21,7 @@
                         <div class="row">
                             <div class="col-lg-12 col-sm-12 col-12">
                                 <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
-                                    <img src="{{ asset('storage/kalender/'.$kalender->nama_file) }}" style="max-height:490px; width:auto;" alt="Kalender" class="cover-img" />
+                                    <img src="{{ asset('/'.$kalender->link_foto) }}" style="height:490px; max-height:490px; width:auto;" alt="Kalender" class="cover-img" />
                                 </div>
                                 <a class="d-flex justify-content-center align-items-center" href="{{ asset('storage/kalender/'.$kalender->nama_file) }}" download="Kalender Kegiatan Ormawa Teknik">
                                     <button class="theme-button-one mt-3">Download Kalender</button>

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Galeri;
+use App\Http\Requests\GaleriRequest;
+use App\Http\Requests\KalenderRequest;
+use App\Http\Requests\PengumumanRequest;
 use App\Kalender;
 use App\Pengumuman;
 use Illuminate\Http\Request;
@@ -21,7 +24,7 @@ class AdminController extends Controller
         return view('admin.kalender');
     }
 
-    public function kalenderUpdate(Request $request)
+    public function kalenderUpdate(KalenderRequest $request)
     {
         $request->validate([
             'kalender' => 'mimes:jpeg,png',
@@ -30,11 +33,13 @@ class AdminController extends Controller
             $kalender = new Kalender;
             $kalender->bulan =  $request->get('bulan_kalender');
             $image_name = 'Kalender '.$request->get('bulan_kalender') . '.png';
+            $link_kalender = 'storage/kalender/'.$image_name;
             $kalender->nama_file = $image_name;
+            $kalender->link_foto = $link_kalender;
             $kalender->save();
             $request->kalender->storeAs('public/kalender', $image_name, ['disks' => 'public']);
         }
-        return redirect()->back();
+        return redirect()->back()->with(['success' => 'Berhasil melakukan update pada kalender']);
     }
 
     public function galeriAddShow()
@@ -42,7 +47,7 @@ class AdminController extends Controller
         return view('admin.galeri.add');
     }
 
-    public function galeriStore(Request $request)
+    public function galeriStore(GaleriRequest $request)
     {
         $request->validate([
             'foto_proker' => 'mimes:jpeg,png',
@@ -54,21 +59,28 @@ class AdminController extends Controller
             $galeri->slug = Str::slug($request->get('nama_proker'));
             $galeri->created_at = $request->get('tanggal_acara');
             $galeri->deskripsi = $request->get('deskripsi');
+            $link_galeri = 'storage/galeri/'.$request->get('nama_proker_singkatan').'.png';
+            $galeri->link_foto = $link_galeri;
             $galeri->save();
             $request->foto_proker->storeAs('public/galeri', $request->get('nama_proker_singkatan').'.png', ['disks' => 'public']);
         }
-        return redirect()->back();
+        return redirect()->back()->with(['success' => 'Berhasil menambahkan foto pada galeri']);
     }
     public function galeriEditShow(){
-        return view('admin.galeri.edit');
+        $galeris = Galeri::latest()->paginate(9);
+        return view('admin.galeri.show', compact('galeris'));
     }
-    public function galeriEditUpdate(){
-        // Fungsi Update
+    public function galeriEdit($slug){
+        $galeris = Galeri::where('slug',$slug)->get();
+        return view('admin.galeri.edit', compact('galeris'));
+    }
+    public function galeriEditUpdate(Request $request){
+
     }
     public function pengumumanAddShow(){
         return view('admin.pengumuman.add');
     }
-    public function pengumumanAddStore(Request $request)
+    public function pengumumanAddStore(PengumumanRequest $request)
     {
         $request->validate([
             'foto_pengumuman' => 'mimes:jpeg,png',
@@ -84,12 +96,17 @@ class AdminController extends Controller
             $pengumuman->save();
             $request->foto_pengumuman->storeAs('public/pengumuman/', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
         }
-        return redirect()->back();
+        return redirect()->back()->with(['success' => 'Berhasil menambahkan pengumuman']);
     }
     public function pengumumanEditShow(){
-        return view('admin.pengumuman.edit');
+        $pengumumans = Pengumuman::latest()->paginate(6);
+        return view('admin.pengumuman.show', compact('pengumumans'));
     }
-    public function pengumumanEditUpdate(){
-        // Fungsi update
+    public function pengumumanEdit($slug){
+        $pengumumans = Pengumuman::where('slug',$slug)->get();
+        return view('admin.pengumuman.edit', compact('pengumumans'));
+    }
+    public function pengumumanEditUpdate(Request $request){
+        
     }
 }
