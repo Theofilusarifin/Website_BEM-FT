@@ -27,7 +27,7 @@
                 </div>
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-lg-8 col-12">
-                        <p style="text-align: justify; text-justify: inter-word;">You would see the biggest gift would be from me and the card attached would so thank you for being a friend the biggest gift.</p>
+                        <p style="text-align: justify; text-justify: inter-word;">BPH merupakan divisi yang bertugas untuk melakukan koordinasi, pengawasan, serta evaluasi keberlangsungan program kerja dan kinerja untuk BEM Fakultas Teknik</p>
                     </div>
                 </div>
             </div>

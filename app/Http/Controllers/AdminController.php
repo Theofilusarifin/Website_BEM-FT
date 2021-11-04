@@ -76,7 +76,7 @@ class AdminController extends Controller
             $pengumuman->created_at = $request->get('tanggal_pengumuman');
             $pengumuman->isi = $request->get('isi');
             $pengumuman->save();
-            $request->foto_proker->storeAs('public/pengumuman', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
+            $request->foto_pengumuman->storeAs('public/pengumuman', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
         }
         return redirect()->back();
     }

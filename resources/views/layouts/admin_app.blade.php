@@ -17,7 +17,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="#061948">
 		<title>BEM FT UBAYA</title>
 		<!-- Favicon -->
-		<link rel="icon" type="image/png" sizes="56x56" href="{{ asset('bemft_assets/images/fav-icon/icon.png') }}">
+		<link rel="icon" type="image/png" sizes="56x56" href="{{ asset('bemft_assets/images/logo/tab.png') }}">
 		<!-- Main style sheet -->
 		<link rel="stylesheet" type="text/css" href="{{ asset('bemft_assets/css/style.css') }}">
 		<!-- responsive style sheet -->
@@ -38,7 +38,7 @@
 					<div class="container">
 						<div class="bg-wrapper clearfix">
 							<div class="logo float-left">
-                                <a href="{{ route('beranda') }}"><img src="{{ asset('bemft_assets/images/logo/logo.png') }}" alt=""></a>
+                                <a href="{{ route('beranda') }}"><img src="{{ asset('bemft_assets/images/logo/navbar-1.png') }}" style="max-width:165px; height:auto;" alt=""></a>
                             </div>
                             
                             {{-- MENU WRAPPER --}}

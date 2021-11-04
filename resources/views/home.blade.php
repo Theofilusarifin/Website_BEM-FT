@@ -1,7 +1,49 @@
 @extends('layouts.app')
 
-@section('content')
+@php
+    $faqs = array(
+    ['question' => 'Kapan audit proposal harus dikirimkan ke AD BEM FT dan Audit DPM FT?',
+    'answer' => 'Bila kegiatan menggunakan dana Kemahasiswaan atau Dana Gabungan yang di dalamnya terdapat Dana Kemahasiswaan.'],
 
+    ['question' => 'Berapa batas poin keterlambatan Proposal dan LPJ setiap program kerja?',
+    'answer' => 'Batas poin keterlambatan, baik Proposal maupun LPJ adalah 20 poin. Bila lebih dari 20, maka Surat Tugas tidak akan diturunkan. Perhitungan poin keterlambatan adalah 1 poin untuk satu hari Keterlambatan.'],
+
+    ['question'=>'Apakah diperbolehkan untuk mengirim soft file Proposal dan LPJ menggunakan E-mail pribadi?',
+    'answer'=>'Pengiriman Proposal dan LPJ <strong>harus menggunakan E-mail Ormawa</strong> Masing-masing dan tidak diperbolehkan mengirim dengan menggunakan E-mail  pribadi'],
+
+    ['question'=>'Bagaimana mekanisme pengajuan Bon Sementara (BS)?' ,
+    'answer' => 'Mengajukan pembuatan <strong>Bon Sementara (BS)</strong> kepada Koor AD BEM-FT melalui email <strong>(adbemft@gmail.com)</strong> dengan format <strong>subject: BS_Ormawa_Nama Kegiatan</strong> dan melampirkan file yang berisikan tanda jadi audit oleh Ketua Komisi Audit DPM-FT dan hasil <strong>Arsip Proposal</strong> yang telah disetujui AD BEM-FT berbentuk <strong>pdf</strong>.'],
+
+    ['question'=>'Bagaimana cara menyusun tabel keuangan dengan baik?' , 
+    'answer'=>'Format tabel keuangan dapat diakses dan diunduh di:
+                </br><a href="https://bit.ly/TabelKeuanganProposal" target="_blank" rel="noopener">https://bit.ly/TabelKeuanganProposal</a>
+                </br><a href="https://bit.ly/TabelKeuanganLPJ" target="_blank" rel="noopener">https://bit.ly/TabelKeuanganLPJ</a>'],
+
+    ['question'=>'Di mana kami bisa mengakses dan mengunduh template Surat Pemberitahuan Acara?' , 
+    'answer'=>'Format Surat Pemberitahuan Acara dapat di-download di:  
+                <br><a href="bit.ly/FORMATBEMFT21" target="_blank" rel="noopener">bit.ly/FORMATBEMFT21</a>'],
+
+    ['question'=>'Bagaimana aturan nota untuk periode kali ini?' , 
+    'answer'=>'Nota dengan nominal di atas Rp5.000.000,00 harus disertai materai <strong>10.000</strong> dan tanda tangan penerima pembayaran (dengan catatan, tanda tangan tidak menutupi identitas dan nominal yang tercantum pada nota dan mengenai materai). <br><span class="text-danger">*Untuk Nota Online di-print terlebih dahulu lalu ditempelkan materai dan dilampirkan di softcopy.</span>'],
+
+    ['question'=>'Berguna untuk apakah link G-Form Data Lomba Mahasiswa yang disediakan oleh BEM FT?' , 
+    'answer'=>'Link tersebut digunakan untuk mendata para mahasiswa terutama mahasiswa di Fakultas Teknik yang berprestasi untuk di follow up lebih lanjut serta pemberian sebuah apresiasi. Untuk mendapatkan Link tersebut dapat menghubungi OA  Line : <strong>@541vnpky</strong>'],
+
+    ['question'=>'ST/SK/Surat Undangan apabila belum turun pada saat mengupload, bagaimana solusinya?' ,
+    'answer'=>'Sebaiknya menunggu hingga ST/SK/Surat Undangan turun terlebih dahulu, baru mengisi GForm tersebut.'],
+
+    ['question'=>'Bagaimana cara untuk dapat melakukan peminjaman inventaris ?' ,
+    'answer'=>'Peminjaman inevntaris dapat menghubungi divisi HRD melalui OA Line : <strong>@541vnpky</strong>'],
+
+    ['question'=>'Apa saja inventaris yang dimiliki oleh BEM FT?' , 
+    'answer'=>'BEM FT memiliki inventaris berupa alat elektronik (handy talkie, mixer, speaker, dsb) dan alat non-elektronik (layar proyektor, alat outbond, dsb).'],
+
+    ['question'=>'Apakah peminjaman inventaris di BEM FT diperuntukkan juga bagi ormawa di luar Fakultas Teknik?' , 
+    'answer'=>'Iya, ormawa di luar Fakultas Teknik juga dapat meminjam inventaris, namun akan dikenakan biaya perawatan.'],
+);
+@endphp
+
+@section('content')
 	{{-- Banner Beranda --}}
 	<div id="theme-main-banner" class="banner-one">
 		<div data-src="{{ asset('bemft_assets/images/home/1.png') }}">
@@ -14,7 +56,7 @@
 		<div data-src="{{ asset('bemft_assets/images/home/2.png') }}">
 			<div class="camera_caption">
 				<div class="container">
-					<p class="wow fadeInUp animated" style="color:#f6f6f6">Jelajahi Fakultas Teknik Secara Virtual</p>
+					<p class="wow fadeInUp animated" style="color:#f6f6f6">Jelajahi Fakultas Teknik Secara Virtual!</p>
 					<h1 class="wow fadeInUp animated" style="color:#fff" data-wow-delay="0.2s">Campus Tour</h1>
 					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">CLICK HERE</a>
 				</div> 
@@ -201,76 +243,23 @@
 						<div class="faq-content">
 							<div class="accordion-one">
 								<div class="panel-group theme-accordion" id="accordion">
+									@foreach ($faqs as $faq)
 									{{-- FAQ 1 --}}
 									<div class="panel">
-										<div class="panel-heading active-panel">
-											<h6 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-											1. What industries do you specialize in?</a>
-											</h6>
-										</div>
-										<div id="collapse1" class="panel-collapse collapse show">
-											<div class="panel-body">
-												<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
-											</div>
-										</div>
-									</div>
-									{{-- FAQ 2 --}}
-									<div class="panel">
 										<div class="panel-heading">
 											<h6 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-												2. You guarantee that our plan will raise capital?</a>
+												<a style="text-align:justify; text-justify:inter-word;" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$loop->index}}">
+													{!!$faq['question']!!}
+												</a>
 											</h6>
 										</div>
-										<div id="collapse2" class="panel-collapse collapse">
+										<div id="collapse{{$loop->index}}" class="panel-collapse collapse">
 											<div class="panel-body">
-												<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
+												<p style="text-align:justify; text-justify:inter-word;">{!!$faq['answer']!!}</p>
 											</div>
 										</div>
 									</div>
-									{{-- FAQ 3 --}}
-									<div class="panel">
-										<div class="panel-heading">
-											<h6 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-												3. Do you ever invest in your clients?</a>
-											</h6>
-										</div>
-										<div id="collapse3" class="panel-collapse collapse">
-											<div class="panel-body">
-												<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
-											</div>
-										</div>
-									</div>
-									{{-- FAQ 4 --}}
-									<div class="panel">
-										<div class="panel-heading">
-											<h6 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-												4. What makes your financial projections special?</a>
-											</h6>
-										</div>
-										<div id="collapse4" class="panel-collapse collapse">
-											<div class="panel-body">
-												<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
-											</div>
-										</div>
-									</div>
-									{{-- FAQ 5 --}}
-									<div class="panel">
-										<div class="panel-heading">
-											<h6 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-												5. Will you agree with everything I say?</a>
-											</h6>
-										</div>
-										<div id="collapse5" class="panel-collapse collapse">
-											<div class="panel-body">
-												<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
-											</div>
-										</div>
-									</div>
+									@endforeach
 								</div>
 							</div>
 						</div>
