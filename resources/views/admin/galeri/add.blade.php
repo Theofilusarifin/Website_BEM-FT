@@ -79,7 +79,7 @@
                     <div class="col-sm-8 col-12">
                         <label for="foto_proker" class="form-label">Masukkan foto program kerja (360 x 310 px)</label>
                         <input class="form-control @error('foto_proker') is-invalid @enderror" type="file"
-                            name="foto_proker" id="foto_proker">
+                            name="foto_proker" id="foto_proker" required>
                         @error('foto_proker')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>

@@ -74,8 +74,23 @@ class AdminController extends Controller
         $galeris = Galeri::where('slug',$slug)->get();
         return view('admin.galeri.edit', compact('galeris'));
     }
-    public function galeriEditUpdate(Request $request){
-
+    public function galeriEditUpdate(GaleriRequest $request){
+        $galeri = Galeri::find($request->get('galeri_id'));
+        $galeri->nama =  $request->get('nama_proker');
+        $galeri->nama_singkatan =  $request->get('nama_proker_singkatan');
+        $galeri->slug = Str::slug($request->get('nama_proker'));
+        $galeri->created_at = $request->get('tanggal_acara');
+        $galeri->deskripsi = $request->get('deskripsi');
+        $request->validate([
+            'foto_proker' => 'mimes:jpeg,png',
+        ]);
+        if (request()->hasFile('foto_proker')){
+            $link_galeri = 'storage/galeri/'.$request->get('nama_proker_singkatan').'.png';
+            $galeri->link_foto = $link_galeri;
+            $request->foto_proker->storeAs('public/galeri', $request->get('nama_proker_singkatan').'.png', ['disks' => 'public']);
+        }
+        $galeri->save();
+        return redirect()->route('galeri.show')->with(['success' => 'Berhasil melakukan update pada galeri']);
     }
     public function pengumumanAddShow(){
         return view('admin.pengumuman.add');
@@ -106,7 +121,21 @@ class AdminController extends Controller
         $pengumumans = Pengumuman::where('slug',$slug)->get();
         return view('admin.pengumuman.edit', compact('pengumumans'));
     }
-    public function pengumumanEditUpdate(Request $request){
-        
+    public function pengumumanEditUpdate(PengumumanRequest $request){
+        $pengumuman = Pengumuman::find($request->get('pengumuman_id'));
+        $pengumuman->judul =  $request->get('judul_pengumuman');
+        $pengumuman->slug = Str::slug($request->get('judul_pengumuman'));
+        $pengumuman->created_at = $request->get('tanggal_pengumuman');
+        $pengumuman->isi = $request->get('isi');
+        $request->validate([
+            'foto_pengumuman' => 'mimes:jpeg,png',
+        ]);
+        if (request()->hasFile('foto_pengumuman')){
+            $link_pengumuman = 'storage/pengumuman/'.$request->get('judul_pengumuman').'.png';
+            $pengumuman->link_foto = $link_pengumuman;
+            $request->foto_pengumuman->storeAs('public/pengumuman/', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
+        }
+        $pengumuman->save();
+        return redirect()->route('pengumuman.show')->with(['success' => 'Berhasil melakukan update pada pengumuman']);
     }
 }

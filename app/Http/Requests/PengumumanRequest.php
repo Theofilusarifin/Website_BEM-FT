@@ -24,10 +24,9 @@ class PengumumanRequest extends FormRequest
     public function rules()
     {
         return [
-            'judul_pengumuman' => 'required|unique:pengumumans,judul',
+            'judul_pengumuman' => 'required|unique:pengumumans,judul,'.$this->pengumuman_id,
             'tanggal_pengumuman' => 'required',
             'isi' => 'required',
-            'foto_pengumuman' => 'required',
         ];
     }
 }

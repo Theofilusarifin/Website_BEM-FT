@@ -60,7 +60,7 @@
                     <div class="form-group row d-flex justify-content-center align-items-center">
                         <div class="col-sm-8 col-12">
                             <label for="foto_pengumuman" class="form-label">Masukkan foto pengumuman (870 x 450 px)</label>
-                            <input class="form-control @error('foto_pengumuman') is-invalid @enderror" type="file" name="foto_pengumuman" id="foto_pengumuman">
+                            <input class="form-control @error('foto_pengumuman') is-invalid @enderror" type="file" name="foto_pengumuman" id="foto_pengumuman" required>
                             @error('foto_pengumuman')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
