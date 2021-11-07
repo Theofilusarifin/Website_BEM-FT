@@ -98,7 +98,7 @@
                     setTimeout(function(){
                         $('.loader').hide();
                         $('.faq-section').show();
-                    }, 700);
+                    }, Math.random() * (700 - 200) + 200);
                 },
                 success: function(data){
                     $.each(data.gedung, function(key,value){
