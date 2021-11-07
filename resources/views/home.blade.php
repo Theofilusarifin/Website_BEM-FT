@@ -16,12 +16,14 @@
 
     ['question'=>'Bagaimana cara menyusun tabel keuangan dengan baik?' , 
     'answer'=>'Format tabel keuangan dapat diakses dan diunduh di:
-                </br><a href="https://bit.ly/TabelKeuanganProposal" target="_blank" rel="noopener">https://bit.ly/TabelKeuanganProposal</a>
+				</br>            
+				</br><a href="https://bit.ly/TabelKeuanganProposal" target="_blank" rel="noopener">https://bit.ly/TabelKeuanganProposal</a>
                 </br><a href="https://bit.ly/TabelKeuanganLPJ" target="_blank" rel="noopener">https://bit.ly/TabelKeuanganLPJ</a>'],
 
     ['question'=>'Di mana kami bisa mengakses dan mengunduh template Surat Pemberitahuan Acara?' , 
     'answer'=>'Format Surat Pemberitahuan Acara dapat di-download di:  
-                <br><a href="bit.ly/FORMATBEMFT21" target="_blank" rel="noopener">bit.ly/FORMATBEMFT21</a>'],
+				</br>            
+				<br><a href="bit.ly/FORMATBEMFT21" target="_blank" rel="noopener">bit.ly/FORMATBEMFT21</a>'],
 
     ['question'=>'Bagaimana aturan nota untuk periode kali ini?' , 
     'answer'=>'Nota dengan nominal di atas Rp5.000.000,00 harus disertai materai <strong>10.000</strong> dan tanda tangan penerima pembayaran (dengan catatan, tanda tangan tidak menutupi identitas dan nominal yang tercantum pada nota dan mengenai materai). <br><span class="text-danger">*Untuk Nota Online di-print terlebih dahulu lalu ditempelkan materai dan dilampirkan di softcopy.</span>'],
@@ -248,7 +250,7 @@
 									<div class="panel">
 										<div class="panel-heading">
 											<h6 class="panel-title">
-												<a class="pr-5" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$loop->index}}">
+												<a class="pr-5" style="font-size: 20px; font-family:Source Sans Pro, sans-serif" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$loop->index}}">
 													{!!$faq['question']!!}
 												</a>
 											</h6>

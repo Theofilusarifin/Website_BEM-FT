@@ -90,7 +90,7 @@
   .faq-section,.faq-section .overlay,.why-we-best,.why-we-best .overlay {height: auto;}
   .faq-section .overlay,.why-we-best .overlay {padding: 60px 0;}
   .faq-section .wrapper .img-box,.why-we-best .wrapper .img-box,.contact-us-section .img-box {height: 250px !important;border-radius: 5px 5px 0 0;}
-  .faq-section .wrapper .faq-content,.why-we-best .wrapper .best-list-item,.contact-us-section .form-wrapper {border-radius: 0 0 5px 5px;}
+  .faq-section .wrapper .faq-content,.why-we-best .wrapper .best-list-item,.contact-us-section .form-wrapper {border-radius:5px;}
   .short-banner .overlay h2 {width: 100%;}
   .theme-footer-two {padding-top: 60px;}
   .theme-footer-two .bottom-footer,.theme-footer-two .top-footer .title {margin-top: 0;}
