@@ -10,12 +10,13 @@
 	</div>
 
 	@if ($message = Session::get('success'))
-	<div class="alert alert-success alert-block section-spacing">
+	<div class="alert alert-success alert-block mb-3">
 		<button type="button" class="close" data-dismiss="alert">×</button>
 		<strong>{{ $message }}</strong>
 	</div>
 	@endif
 
+	<div class="mt-5" style="height:25px;"></div>
 	@if($pengumumans->count())
 		<div class="our-solution section-spacing mt-5">
 			<div class="container">
@@ -32,13 +33,17 @@
 						<div class="post-wrapper">
 							<div class="single-blog">
 								<div class="image-box">
-									<img src="{{ asset('/'.$pengumuman->link_foto) }}" alt="Foto Pengumuman" class="cover-img">
+									<a href="{{ '/admin/pengumuman/update/'.$pengumuman->slug }}">
+										<img src="{{ asset('/'.$pengumuman->link_foto) }}" alt="Foto Pengumuman" class="cover-img">
+									</a>
 									<div class="overlay"><a href="#" class="date">{{ $pengumuman->created_at }}</a></div>
 								</div>
 								<div class="post-meta">
-									<h5><a href="{{ 'pengumuman/'.$pengumuman->slug }}">{{ $pengumuman->judul }}</a></h5>
+									<h5><a href="{{ '/admin/pengumuman/update/'.$pengumuman->slug }}">{{ $pengumuman->judul }}</a></h5>
 									<p>{{ substr_replace($pengumuman->isi, "...", 300) }}</p>
-									<a href="{{ 'pengumuman/'.$pengumuman->slug }}" class="read-more">READ MORE</a>
+									<a href="{{ '/admin/pengumuman/update/'.$pengumuman->slug }}" style="margin:0; padding:0; color:#fff">
+										<button type="submit" class="theme-button-one">Update</button>
+									</a>
 								</div>
 							</div>
 						</div>

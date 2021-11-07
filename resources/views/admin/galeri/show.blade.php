@@ -10,12 +10,13 @@
 	</div>
 	
 	@if ($message = Session::get('success'))
-	<div class="alert alert-success alert-block section-spacing">
+	<div class="alert alert-success alert-block mb-3">
 		<button type="button" class="close" data-dismiss="alert">×</button>
 		<strong>{{ $message }}</strong>
 	</div>
 	@endif
 
+	<div class="mt-5" style="height:25px;"></div>
 	@if($galeris->count())
 		<div class="our-solution section-spacing mt-5">
 			<div class="container">

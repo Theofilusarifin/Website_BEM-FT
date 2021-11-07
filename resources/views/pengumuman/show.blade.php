@@ -17,7 +17,7 @@
                         <div class="post-wrapper">
                             <div class="single-blog">
                                 <div class="image-box">
-                                    <img src="{{ asset('/'.$pengumuman->link_foto) }}" alt="Foto Pengumuman" style="height:auto; width:870px; max-width:870px;" class="cover-img" >
+                                    <img src="{{ asset('/'.$pengumuman->link_foto) }}" alt="Foto Pengumuman" class="cover-img" >
                                     @isset($pengumuman->created_at)
                                     <div class="overlay">
                                         <a href="#" class="date">{{ date("M d, Y",strtotime($pengumuman->created_at)) }}</a>

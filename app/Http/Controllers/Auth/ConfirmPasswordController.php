@@ -35,6 +35,7 @@ class ConfirmPasswordController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // Biar orang ga bisa akses
+        return abort(404);
     }
 }
