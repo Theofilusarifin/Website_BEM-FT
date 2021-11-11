@@ -60,16 +60,16 @@
 				<div class="container">
 					<p class="wow fadeInUp animated" style="color:#f6f6f6">Jelajahi Fakultas Teknik Secara Virtual!</p>
 					<h1 class="wow fadeInUp animated" style="color:#fff" data-wow-delay="0.2s">Campus Tour</h1>
-					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">CLICK HERE</a>
+					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">Klik Disini</a>
 				</div> 
 			</div>
 		</div>
-		<div data-src="{{ asset('bemft_assets/images/home/slide-1.jpg') }}">
+		<div data-src="{{ asset('bemft_assets/images/home/3.png') }}">
 			<div class="camera_caption">
 				<div class="container">
-					<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
-					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
-					<a href="{{ route('tour') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">Click Here</a>
+					<p class="wow fadeInUp animated" style="color:#f6f6f6">Kenali Ormawa Fakultas Teknik!</p>
+					<h1 class="wow fadeInUp animated" style="color:#f6f6f6" data-wow-delay="0.2s">Profil Ormawa <br>Fakultas Teknik</h1>
+					<a href="{{ route('ormawa') }}" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">Klik Disini</a>
 				</div>
 			</div>
 		</div>

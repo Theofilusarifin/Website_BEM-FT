@@ -13,7 +13,7 @@
                         <li><a href="{{ route('idd') }}">IDD</a></li>
                     </ul>
                 </li>
-                <li class="{{ request()->is('tour') ? 'active' : '' }}{{ request()->is('gform') ? 'active' : '' }}{{ request()->is('event') ? 'active' : '' }}{{ request()->is('pengumuman') ? 'active' : '' }}">
+                <li class="{{ request()->is('tour') ? 'active' : '' }}{{ request()->is('gform') ? 'active' : '' }}{{ request()->is('event') ? 'active' : '' }}{{ request()->is('pengumuman') ? 'active' : '' }}{{ request()->is('pengumuman/*') ? 'active' : '' }}">
                     <a style="pointer-events: none; cursor: default;" href="#">Info Mahasiswa</a>
                     <ul class="dropdown">
                         <li><a href="{{ route('event') }}">Kalender Kegiatan FT</a></li>
@@ -25,7 +25,7 @@
                 <li class="{{ request()->is('profil/*') ? 'active' : '' }}">
                     <a href="{{ route('ormawa') }}">Ormawa FT</a>
                 </li>
-                <li class="{{ request()->is('galeri') ? 'active' : '' }}"><a href="{{ route('galeri') }}">Galeri</a></li>
+                <li class="{{ request()->is('galeri') ? 'active' : '' }}{{ request()->is('galeri/*') ? 'active' : '' }}"><a href="{{ route('galeri') }}">Galeri</a></li>
         </ul>
     </nav>
 </div>
