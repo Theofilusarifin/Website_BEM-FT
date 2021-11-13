@@ -32,12 +32,14 @@ class AdminController extends Controller
         if (request()->hasFile('kalender')){
             $kalender = new Kalender;
             $kalender->bulan =  $request->get('bulan_kalender');
-            $image_name = 'Kalender '.$request->get('bulan_kalender') . '.png';
-            $link_kalender = 'storage/kalender/'.$image_name;
+            $image_name = $request->get('bulan_kalender') . '.png';
+            $link_kalender = 'bemft_assets/images/kalender';
+            $link_db = 'bemft_assets/images/kalender/'.$image_name;
             $kalender->nama_file = $image_name;
-            $kalender->link_foto = $link_kalender;
+            $kalender->link_foto = $link_db;
             $kalender->save();
-            $request->kalender->storeAs('public/kalender', $image_name, ['disks' => 'public']);
+
+            $request->file('kalender')->move($link_kalender, $image_name);
         }
         return redirect()->back()->with(['success' => 'Berhasil melakukan update pada kalender']);
     }
@@ -59,10 +61,15 @@ class AdminController extends Controller
             $galeri->slug = Str::slug($request->get('nama_proker'));
             $galeri->created_at = $request->get('tanggal_acara');
             $galeri->deskripsi = $request->get('deskripsi');
-            $link_galeri = 'storage/galeri/'.$request->get('nama_proker_singkatan').'.png';
-            $galeri->link_foto = $link_galeri;
+
+            $image_name = $request->get('nama_proker_singkatan').'.png';
+            $link_galeri = 'bemft_assets/images/galeri';
+            $link_db = 'bemft_assets/images/galeri/'.$request->get('nama_proker_singkatan').'.png';
+
+            $galeri->link_foto = $link_db;
             $galeri->save();
-            $request->foto_proker->storeAs('public/galeri', $request->get('nama_proker_singkatan').'.png', ['disks' => 'public']);
+
+            $request->file('foto_proker')->move($link_galeri, $image_name);
         }
         return redirect()->back()->with(['success' => 'Berhasil menambahkan foto pada galeri']);
     }
@@ -85,9 +92,13 @@ class AdminController extends Controller
             'foto_proker' => 'mimes:jpeg,png',
         ]);
         if (request()->hasFile('foto_proker')){
-            $link_galeri = 'storage/galeri/'.$request->get('nama_proker_singkatan').'.png';
-            $galeri->link_foto = $link_galeri;
-            $request->foto_proker->storeAs('public/galeri', $request->get('nama_proker_singkatan').'.png', ['disks' => 'public']);
+
+            $image_name = $request->get('nama_proker_singkatan').'.png';
+            $link_galeri = 'bemft_assets/images/galeri';
+            $link_db = 'bemft_assets/images/galeri/'.$request->get('nama_proker_singkatan').'.png';
+
+            $galeri->link_foto = $link_db;
+            $request->file('foto_proker')->move($link_galeri, $image_name);
         }
         $galeri->save();
         return redirect()->route('galeri.show')->with(['success' => 'Berhasil melakukan update pada galeri']);
@@ -106,10 +117,15 @@ class AdminController extends Controller
             $pengumuman->slug = Str::slug($request->get('judul_pengumuman'));
             $pengumuman->created_at = $request->get('tanggal_pengumuman');
             $pengumuman->isi = $request->get('isi');
-            $link_pengumuman = 'storage/pengumuman/'.$request->get('judul_pengumuman').'.png';
-            $pengumuman->link_foto = $link_pengumuman;
+
+            $image_name = $request->get('judul_pengumuman').'.png';
+            $link_pengumuman = 'bemft_assets/images/pengumuman';
+            $link_db = 'bemft_assets/images/pengumuman/'.$request->get('judul_pengumuman').'.png';
+            $pengumuman->link_foto = $link_db; 
+
             $pengumuman->save();
-            $request->foto_pengumuman->storeAs('public/pengumuman/', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
+            
+            $request->file('foto_pengumuman')->move($link_pengumuman, $image_name);
         }
         return redirect()->back()->with(['success' => 'Berhasil menambahkan pengumuman']);
     }
@@ -131,9 +147,12 @@ class AdminController extends Controller
             'foto_pengumuman' => 'mimes:jpeg,png',
         ]);
         if (request()->hasFile('foto_pengumuman')){
-            $link_pengumuman = 'storage/pengumuman/'.$request->get('judul_pengumuman').'.png';
-            $pengumuman->link_foto = $link_pengumuman;
-            $request->foto_pengumuman->storeAs('public/pengumuman/', $request->get('judul_pengumuman').'.png', ['disks' => 'public']);
+            $image_name = $request->get('judul_pengumuman').'.png';
+            $link_pengumuman = 'bemft_assets/images/pengumuman';
+            $link_db = 'bemft_assets/images/pengumuman/'.$request->get('judul_pengumuman').'.png';
+            $pengumuman->link_foto = $link_db; 
+            
+            $request->file('foto_pengumuman')->move($link_pengumuman, $image_name);
         }
         $pengumuman->save();
         return redirect()->route('pengumuman.show')->with(['success' => 'Berhasil melakukan update pada pengumuman']);

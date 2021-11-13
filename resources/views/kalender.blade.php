@@ -23,7 +23,7 @@
                                 <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
                                     <img src="{{ asset('/'.$kalender->link_foto) }}" alt="Kalender" class="cover-img" />
                                 </div>
-                                <a class="d-flex justify-content-center align-items-center" href="{{ asset('storage/kalender/'.$kalender->nama_file) }}" download="Kalender Kegiatan Ormawa Teknik">
+                                <a class="d-flex justify-content-center align-items-center" href="{{ asset('/'.$kalender->link_foto) }}" download="Kalender Kegiatan Ormawa Teknik">
                                     <button class="theme-button-one mt-3">Download Kalender</button>
                                 </a>
                             </div>
