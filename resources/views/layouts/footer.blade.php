@@ -54,7 +54,7 @@
     </div>
     <div class="bottom-footer">
         <div class="container">
-            <p>&copy; Copyrights BEM FT Ubaya</p>
+            <p>&copy; Copyrights <b>BEM FT UBAYA</p>
         </div>
     </div>
 </footer>
