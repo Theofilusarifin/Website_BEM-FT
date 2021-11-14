@@ -848,7 +848,12 @@ body .theme-button-one:hover {
     width: 40px;
     height: 4px;
     border-radius: 10px;
-    background: linear-gradient(90deg,rgba(10, 136, 161, 1) 0%,rgba(7, 104, 150, 1) 49%,rgba(4, 73, 133, 1) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(10, 136, 161, 1) 0%,
+        rgba(7, 104, 150, 1) 49%,
+        rgba(4, 73, 133, 1) 100%
+    );
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -1780,7 +1785,7 @@ body .theme-button-one:hover {
     border: none;
     border-bottom: 1px solid #e6e6e6;
 }
-.accordion-one .panel-heading h6 a{
+.accordion-one .panel-heading h6 a {
     color: #232323;
     padding: 15px 25px 15px 0;
     display: block;
