@@ -25,31 +25,29 @@
 				</div>
 			</div>
 		</div>
-		<div class="blog-inner-page section-spacing">
+		<div class="our-case our-project section-spacing">
 			<div class="container">
-				@foreach($pengumumans as $pengumuman)
-				<div class="row d-flex justify-content-center align-items-center">
-					<div class="col-xl-9 col-lg-8 col-12 our-blog">
-						<div class="post-wrapper">
-							<div class="single-blog">
-								<div class="image-box">
-									<a href="{{ '/admin/pengumuman/update/'.$pengumuman->slug }}">
-										<img src="{{ asset('/'.$pengumuman->link_foto) }}" alt="Foto Pengumuman" class="cover-img">
-									</a>
-									<div class="overlay"><a href="#" class="date">{{ $pengumuman->created_at }}</a></div>
-								</div>
-								<div class="post-meta">
-									<h5><a href="{{ '/admin/pengumuman/update/'.$pengumuman->slug }}">{{ $pengumuman->judul }}</a></h5>
-									<p>{{ substr_replace($pengumuman->isi, "...", 300) }}</p>
-									<a href="{{ '/admin/pengumuman/update/'.$pengumuman->slug }}" style="margin:0; padding:0; color:#fff">
-										<button type="submit" class="theme-button-one">Update</button>
-									</a>
+				<div class="wrapper mb-4">
+					<div class="row">
+						@foreach($pengumumans as $pengumuman)
+						<div class="col-lg-4 col-sm-6 col-12">
+							<div class="single-case-block">
+								<img src="{{ asset('/'.$pengumuman->link_foto) }}" alt="Foto Pengumuman" class="cover-img">
+								<div class="hover-content">
+									<div class="text clearfix">
+										<div class="float-left">
+											<h5><a href="{{ '/admin/pengumuman/update/'.$pengumuman->slug }}">{{ $pengumuman->judul }}</a></h5>
+											<p>{{ substr_replace($pengumuman->isi, "...", 100) }}</p>
+										</div>
+										<a href="{{ '/admin/pengumuman/update/'.$pengumuman->slug }}" class="details float-right"><i
+												class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+									</div>
 								</div>
 							</div>
 						</div>
+						@endforeach
 					</div>
 				</div>
-				@endforeach
 				{{-- Pagination --}}
 				<div class="d-flex justify-content-center">
 					<div>

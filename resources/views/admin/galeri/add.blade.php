@@ -39,8 +39,8 @@
                 </div>
                 <div class="form-group row d-flex justify-content-center align-items-center">
                     <div class="col-sm-8 col-12">
-                        <label for="nama_proker_singkatan" class="form-label">Nama Singkatan (Apabila tidak ada tulis
-                            ulang nama program kerja)</label>
+                        <label for="nama_proker_singkatan" class="form-label">Nama Singkatan <span class="text-danger"><small>(Apabila tidak ada tulis
+                        ulang nama program kerja)</small></span></label>
                         <input id="nama_proker_singkatan" type="text" name="nama_proker_singkatan"
                             value="{{ old('nama_proker_sinkatan') }}"
                             class="form-control @error('nama_proker_singkatan') is-invalid @enderror" autofocus>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="form-group row d-flex justify-content-center align-items-center">
                     <div class="col-sm-8 col-12">
-                        <label for="deskripsi" class="form-label">Deskripsi</label>
+                        <label for="deskripsi" class="form-label">Deskripsi <span class="text-danger"><small>(No Emoticon)</small></span></label>
                         <textarea class="form-control @error('deskripsi') is-invalid @enderror" id="deskripsi"
                             name="deskripsi" rows="3"></textarea>
                         @error('deskripsi')
@@ -77,7 +77,7 @@
                 </div>
                 <div class="form-group row d-flex justify-content-center align-items-center">
                     <div class="col-sm-8 col-12">
-                        <label for="foto_proker" class="form-label">Masukkan foto program kerja (360 x 310 px)</label>
+                        <label for="foto_proker" class="form-label">Masukkan foto program kerja <span class="text-danger"><small>(360 x 310 px)</small></span></label>
                         <input class="form-control @error('foto_proker') is-invalid @enderror" type="file"
                             name="foto_proker" id="foto_proker" required>
                         @error('foto_proker')

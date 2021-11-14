@@ -21,6 +21,8 @@
 		<!-- responsive style sheet -->
 		<link rel="stylesheet" type="text/css" href="{{ asset('bemft_assets/css/responsive.css') }}">
 		
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 		@yield('link')
 
 		@yield('style')
@@ -92,6 +94,12 @@
 			<!-- Theme js -->
 			<script src="{{ asset('bemft_assets/js/theme.js') }}"></script>
 			<script src="{{ asset('bemft_assets/js/map-script.js') }}"></script>
+
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+			<script>
+				AOS.init();
+			</script>
 		</div>
 	</body>
 </html>

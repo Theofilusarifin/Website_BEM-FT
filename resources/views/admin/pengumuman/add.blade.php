@@ -48,7 +48,7 @@
                     </div>
                     <div class="form-group row d-flex justify-content-center align-items-center">
                         <div class="col-sm-8 col-12">
-                            <label for="isi" class="form-label">Isi Pengumuman</label>
+                            <label for="isi" class="form-label">Isi Pengumuman <span class="text-danger"><small>(No Emoticon)</small></span></label>
 							<textarea  class="form-control @error('isi') is-invalid @enderror" id="isi" name="isi" rows="3"></textarea>
                             @error('isi')
                                 <span class="invalid-feedback" role="alert">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="form-group row d-flex justify-content-center align-items-center">
                         <div class="col-sm-8 col-12">
-                            <label for="foto_pengumuman" class="form-label">Masukkan foto pengumuman (870 x 450 px)</label>
+                            <label for="foto_pengumuman" class="form-label">Masukkan foto pengumuman <span class="text-danger"><small>(870 x 450 px)</small></span></label>
                             <input class="form-control @error('foto_pengumuman') is-invalid @enderror" type="file" name="foto_pengumuman" id="foto_pengumuman" required>
                             @error('foto_pengumuman')
                                 <span class="invalid-feedback" role="alert">

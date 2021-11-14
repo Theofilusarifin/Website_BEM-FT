@@ -27,7 +27,7 @@
                 </div>
                 <div class="row d-flex justify-content-center align-items-center">
 					<div class="col-lg-8 col-12 text">
-						<p style="text-align: justify; text-justify: inter-word;">Administration Department (AD) adalah divisi BEM FT yang mengurus segala urusan administrasi Ormawa Fakultas Teknik berupa pengauditan proposal dan laporan pertanggung-jawaban.</p>
+						<p style="text-align: justify; text-justify: inter-word; text-align-last: center;">Administration Department (AD) adalah divisi BEM FT yang mengurus segala urusan administrasi Ormawa Fakultas Teknik berupa pengauditan proposal dan laporan pertanggung-jawaban.</p>
 					</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
             <div class="wrapper">
                 {{-- Koor Wakoor --}}
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/ad/robbel.jpeg') }}" alt="">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/ad/dhita.jpeg') }}" alt="">
@@ -66,7 +66,7 @@
                 {{-- End Of Koor Wakoor --}}
                 {{-- Anggota --}}
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/ad/angel.jpeg') }}" alt="">
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/ad/tiffany.jpeg') }}" alt="">
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/ad/rivaldo.jpeg') }}" alt="">

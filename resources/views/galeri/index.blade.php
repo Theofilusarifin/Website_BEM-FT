@@ -22,7 +22,7 @@
 				<div class="wrapper mb-4">
 					<div class="row">
 						@foreach($galeris as $galeri)
-						<div class="col-lg-4 col-sm-6 col-12">
+						<div class="col-lg-4 col-sm-6 col-12" data-aos="zoom-in">
 							<div class="single-case-block">
 								<img src="{{ asset('/'.$galeri->link_foto) }}" alt="Foto Galeri" class="cover-img" >
 								<div class="hover-content">

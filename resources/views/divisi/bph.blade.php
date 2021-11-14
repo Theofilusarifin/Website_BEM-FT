@@ -27,7 +27,7 @@
                 </div>
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-lg-8 col-12">
-                        <p style="text-align: justify; text-justify: inter-word;">BPH merupakan divisi yang bertugas untuk melakukan koordinasi, pengawasan, serta evaluasi keberlangsungan program kerja dan kinerja untuk BEM Fakultas Teknik</p>
+                        <p style="text-align: justify; text-justify: inter-word; text-align-last: center;">BPH merupakan divisi yang bertugas untuk melakukan koordinasi, pengawasan, serta evaluasi keberlangsungan program kerja dan kinerja untuk BEM Fakultas Teknik</p>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
         <div class="container">
             <div class="wrapper">
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/bph/fauzi.jpeg') }}" alt="">
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/bph/eunike.jpeg') }}" alt="">
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/bph/arifin.jpeg') }}" alt="">
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/bph/ricardo.jpeg') }}" alt="">

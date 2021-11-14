@@ -1574,7 +1574,7 @@ body .theme-button-one:hover {
 }
 /*------------------- About Company Stye Two -------------------*/
 .about-compnay-two {
-    background: url(../images/home/11.jpg) no-repeat center center;
+    /* background: url(../images/home/11.jpg) no-repeat center center; */
     background-size: cover;
     background-attachment: fixed;
     background-color: #707d9e;

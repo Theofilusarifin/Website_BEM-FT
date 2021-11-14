@@ -52,7 +52,7 @@
                 </div>
                 <div class="form-group row d-flex justify-content-center align-items-center">
                     <div class="col-sm-8 col-12">
-                        <label for="isi" class="form-label">Isi Pengumuman</label>
+                        <label for="isi" class="form-label">Isi Pengumuman <span class="text-danger"><small>(No Emoticon)</small></span></label>
                         <textarea class="form-control @error('isi') is-invalid @enderror" id="isi" name="isi"
                             rows="3">{{ $pengumuman->isi }}</textarea>
                         @error('isi')

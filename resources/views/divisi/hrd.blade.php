@@ -27,7 +27,7 @@
                 </div>
                 <div class="row d-flex justify-content-center align-items-center">
 					<div class="col-lg-8 col-12 text">
-						<p style="text-align: justify; text-justify: inter-word;">Human Resource Department (HRD) adalah divisi BEM FT yang menjaga hubungan antar internal dan eksternal BEM FT, mulai dari menyiapkan kegiatan bonding untuk internal hingga kegiatan eksternal BEM FT.</p>
+						<p style="text-align: justify; text-justify: inter-word; text-align-last: center;">Human Resource Department (HRD) adalah divisi BEM FT yang menjaga hubungan antar internal dan eksternal BEM FT, mulai dari menyiapkan kegiatan bonding untuk internal hingga kegiatan eksternal BEM FT.</p>
 					</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
             <div class="wrapper">
                 {{-- Koor Wakoor --}}
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/hrd/reynard.jpeg') }}" alt="">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/hrd/arden.jpeg') }}" alt="">
@@ -66,7 +66,7 @@
                 {{-- End Of Koor Wakoor --}}
                 {{-- Anggota --}}
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/hrd/monica.jpeg') }}" alt="">
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/hrd/yabes.jpeg') }}" alt="">
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/hrd/ariq.jpeg') }}" alt="">
@@ -99,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12 p-4">
+                    <div class="col-lg-3 col-sm-6 col-12 p-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="team-member">
                             <div class="image-box">
                                 <img src="{{ asset('bemft_assets/images/anggota/hrd/alvin.jpeg') }}" alt="">
