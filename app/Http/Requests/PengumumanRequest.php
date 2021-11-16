@@ -24,9 +24,9 @@ class PengumumanRequest extends FormRequest
     public function rules()
     {
         return [
-            'judul_pengumuman' => 'required|unique:pengumumans,judul,'.$this->pengumuman_id,
+            'judul_pengumuman' => 'required|regex:/^[a-zA-Z0-9\s]+$/|unique:pengumumans,judul,'.$this->pengumuman_id,
             'tanggal_pengumuman' => 'required',
-            'isi' => 'required',
+            'isi' => 'required|regex:/^[a-zA-Z0-9\s]+$/',
         ];
     }
 }

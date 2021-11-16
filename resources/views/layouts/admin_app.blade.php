@@ -36,7 +36,7 @@
 			<header class="header-two">
 				<div class="theme-menu-wrapper">
 					<div class="container">
-						<div class="bg-wrapper clearfix">
+						<div class="bg-wrapper clearfix d-flex justify-content-center align-items-center">
 							<div class="logo float-left">
                                 <a href="{{ route('beranda') }}"><img src="{{ asset('bemft_assets/images/logo/navbar-1.png') }}" style="max-width:165px; height:auto;" alt=""></a>
                             </div>

@@ -108,7 +108,7 @@ Line : <strong>@541vnpky</strong>'],
 
 <div class="our-team section-spacing">
 	<div class="container">
-		<div class="theme-title-one" style="margin-bottom:-30px">
+		<div class="theme-title-one" style="margin-bottom:-30px" data-aos="fade-up" data-aos-anchor-placement="top-center">
 			<h2>GUBERNUR & WAKIL GUBERNUR<br>FAKULTAS TEKNIK 2021-2022</h2>
 		</div>
 		<div class="wrapper">
@@ -145,10 +145,10 @@ Line : <strong>@541vnpky</strong>'],
 <div class="our-solution section-spacing">
 	<div class="container">
 		{{-- Visi --}}
-		<div class="theme-title-one" style="margin-bottom:-30px" data-aos="fade-up" data-aos-anchor-placement="top-center">
+		<div class="theme-title-one" style="margin-bottom:-30px" data-aos="zoom-in">
 			<h2>VISI</h2>
 		</div>
-		<div class="wrapper mb-5" data-aos="fade-up" data-aos-anchor-placement="top-center">
+		<div class="wrapper mb-5" data-aos="zoom-in">
 			<div class="row justify-content-center mb-5">
 				<div class="col-lg-8 col-sm-12 col-12">
 					<div class="single-solution-block">
@@ -166,12 +166,12 @@ Line : <strong>@541vnpky</strong>'],
 		</div>
 
 		{{-- Misi --}}
-		<div class="theme-title-one" style="margin-bottom:-30px" data-aos="fade-up" data-aos-anchor-placement="top-center">
+		<div class="theme-title-one" style="margin-bottom:-30px" data-aos="zoom-in">
 			<h2>MISI</h2>
 		</div>
 		<div class="wrapper">
 			<div class="row">
-				<div class="col-lg-4 col-sm-6 col-12" data-aos="fade-right" data-aos-anchor-placement="top-center">
+				<div class="col-lg-4 col-sm-6 col-12" data-aos="zoom-in">
 					<div class="single-solution-block">
 						<img src="{{ asset('bemft_assets/images/icon/mission.png') }}" alt="misi" class="icon">
 						<h5>
@@ -181,7 +181,7 @@ Line : <strong>@541vnpky</strong>'],
 							ORMAWA dan Masyarakat Fakultas Teknik </p>
 					</div>
 				</div>
-				<div class="col-lg-4 col-sm-6 col-12" data-aos="fade-up" data-aos-anchor-placement="top-center">
+				<div class="col-lg-4 col-sm-6 col-12" data-aos="zoom-in">
 					<div class="single-solution-block">
 						<img src="{{ asset('bemft_assets/images/icon/mission.png') }}" alt="misi" class="icon">
 						<h5>
@@ -192,7 +192,7 @@ Line : <strong>@541vnpky</strong>'],
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-4 col-sm-6 col-12" data-aos="fade-left" data-aos-anchor-placement="top-center">
+				<div class="col-lg-4 col-sm-6 col-12" data-aos="zoom-in">
 					<div class="single-solution-block">
 						<img src="{{ asset('bemft_assets/images/icon/mission.png') }}" alt="misi" class="icon">
 						<h5>

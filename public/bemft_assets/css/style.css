@@ -1930,7 +1930,7 @@ body .theme-button-one:hover {
 }
 /*---------------------- Theme Inner Banner -----------------*/
 .theme-inner-banner {
-    background: url(../images/home/inner-banner.jpg) no-repeat center center;
+    /* background: url(../images/home/inner-banner.jpg) no-repeat center center; */
     background-attachment: fixed;
     background-size: cover;
     background-color: #707d9e;

@@ -29,7 +29,7 @@
                     <div class="col-sm-8 col-12">
                         <label for="nama_proker" class="form-label">Nama Program Kerja</label>
                         <input id="nama_proker" type="text" name="nama_proker" value="{{ old('nama_proker') }}"
-                            class="form-control @error('nama_proker') is-invalid @enderror" autofocus>
+                            class="form-control @error('nama_proker') is-invalid @enderror" value="{{ old('nama_proker') ?? '' }}" autofocus>
                         @error('nama_proker')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -43,7 +43,7 @@
                         ulang nama program kerja)</small></span></label>
                         <input id="nama_proker_singkatan" type="text" name="nama_proker_singkatan"
                             value="{{ old('nama_proker_sinkatan') }}"
-                            class="form-control @error('nama_proker_singkatan') is-invalid @enderror" autofocus>
+                            class="form-control @error('nama_proker_singkatan') is-invalid @enderror" value="{{ old('nama_proker_sinkatan') ?? '' }}" autofocus>
                         @error('nama_proker_singkatan')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -55,7 +55,7 @@
                     <div class="col-sm-8 col-12">
                         <label for="tanggal_acara" class="form-label">Tanggal Acara</label>
                         <input type="date" id="tanggal_acara" name="tanggal_acara"
-                            class="form-control @error('tanggal_acara') is-invalid @enderror">
+                            class="form-control @error('tanggal_acara') is-invalid @enderror" value="{{ old('tanggal_acara') ?? '' }}">
                         @error('tanggal_acara')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -67,7 +67,7 @@
                     <div class="col-sm-8 col-12">
                         <label for="deskripsi" class="form-label">Deskripsi <span class="text-danger"><small>(No Emoticon)</small></span></label>
                         <textarea class="form-control @error('deskripsi') is-invalid @enderror" id="deskripsi"
-                            name="deskripsi" rows="3"></textarea>
+                            name="deskripsi" rows="3" value="{{ old('deskripsi') ?? '' }}"></textarea>
                         @error('deskripsi')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -79,7 +79,7 @@
                     <div class="col-sm-8 col-12">
                         <label for="foto_proker" class="form-label">Masukkan foto program kerja <span class="text-danger"><small>(360 x 310 px)</small></span></label>
                         <input class="form-control @error('foto_proker') is-invalid @enderror" type="file"
-                            name="foto_proker" id="foto_proker" required>
+                            name="foto_proker" id="foto_proker" value="{{ old('foto_proker') ?? '' }}" required>
                         @error('foto_proker')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
