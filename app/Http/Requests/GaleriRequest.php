@@ -24,10 +24,10 @@ class GaleriRequest extends FormRequest
     public function rules()
     {
         return [
-            'nama_proker' => 'required|regex:/^[a-zA-Z0-9\s]+$/|unique:galeris,nama,'.$this->galeri_id,
-            'nama_proker_singkatan' => 'required|regex:/^[a-zA-Z0-9\s]+$/|unique:galeris,nama_singkatan,'.$this->galeri_id ,
+            'nama_proker' => 'required|string|unique:galeris,nama,'.$this->galeri_id,
+            'nama_proker_singkatan' => 'required|string|unique:galeris,nama_singkatan,'.$this->galeri_id ,
             'tanggal_acara' => 'required',
-            'deskripsi' => 'required|regex:/^[a-zA-Z0-9\s]+$/',
+            'deskripsi' => 'required|string',
         ];
     }
 }
