@@ -55,6 +55,27 @@ Line : <strong>@541vnpky</strong>'],
 
 ['question'=>'Apakah peminjaman inventaris di BEM FT diperuntukkan juga bagi ormawa di luar Fakultas Teknik?' ,
 'answer'=>'Iya, ormawa di luar Fakultas Teknik juga dapat meminjam inventaris, namun akan dikenakan biaya perawatan.'],
+
+['question' => 'Untuk request publikasi harus menghubungi siapa?',
+'answer'=>'untuk publikasi bisa langsung dm ke instagram @bem_ft_ubaya'],
+
+['question'=>'Apakah boleh mengirimkan bahan publikasi h-1',
+'answer'=>'tidak boleh ya, untuk pengiriman paling tidak h-7 sebelum kegiatan dilaksanakan'],
+
+['question'=>'Untuk publikasi akan dishare melalui apa?',
+'answer'=>'segala publikasi akan dishare melalui story instagram @bem_ft_ubaya'],
+
+['question'=>'Apakah publikasi bisa melalui feeds instagram? Kalau iya, mekanismenya bagaimana?',
+'answer'=>'bisa publikasi melalui feeds, untuk mekanismenya harus mengirimkan bahan publikasi paling tidak h-21 acara'],
+
+['question'=>'Untuk Kalender Teknik, apakah ada batas waktu pengisiannya?',
+'answer'=>'tentu saja ada, batas waktu pengisian setiap tanggal 20 pada setiap bulannya'],
+
+['question'=>'Apa saja ketentuan kegiatan yang akan diinputkan pada Kalender Teknik?',
+'answer'=>'kegiatan yang diinputkan merupakan kegiatan eksternal, yang ingin disebarluaskan, serta butuh bantuan publikasi'],
+
+['question'=>'Kalender Teknik akan dishare melalui apa?',
+'answer'=>'Kalender Teknik akan dishare melalui feeds instagram @bem_ft_ubaya serta website official bemft'],
 );
 @endphp
 
