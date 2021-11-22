@@ -100,7 +100,7 @@ Line : <strong>@541vnpky</strong>'],
 			</div>
 		</div>
 	</div>
-	<div data-src="{{ asset('bemft_assets/images/home/3.png') }}">
+	<div data-src="{{ asset('bemft_assets/images/home/4.png') }}">
 		<div class="camera_caption">
 			<div class="container">
 				<p class="wow fadeInUp animated" style="color:#f6f6f6">Kenali Ormawa Fakultas Teknik!</p>
