@@ -254,7 +254,7 @@ Line : <strong>@541vnpky</strong>'],
 {{-- Divisi --}}
 <div class="top-feature section-spacing">
 	<div class="top-features-slide">
-		<div class="item">
+		<div class="item" data-aos="zoom-out" data-aos-duration="750">
 			<div class="main-content" style="background:#fafafa;">
 				<img src="{{ asset('bemft_assets/images/logo/bph.png') }}"
 					style="max-height:143px; height 143px; width:auto" alt="BPH">
@@ -263,7 +263,7 @@ Line : <strong>@541vnpky</strong>'],
 			</div>
 		</div>
 
-		<div class="item">
+		<div class="item" data-aos="zoom-out" data-aos-duration="750">
 			<div class="main-content" style="background:#f6f6f6;">
 				<img src="{{ asset('bemft_assets/images/logo/a_d.png') }}"
 					style="max-height:143px; height 143px; width:auto" alt="AD">
@@ -272,7 +272,7 @@ Line : <strong>@541vnpky</strong>'],
 			</div>
 		</div>
 
-		<div class="item">
+		<div class="item" data-aos="zoom-out" data-aos-duration="750">
 			<div class="main-content" style="background:#efefef;">
 				<img src="{{ asset('bemft_assets/images/logo/hrd.png') }}"
 					style="max-height:143px; height 143px; width:auto" alt="HRD">
@@ -281,7 +281,7 @@ Line : <strong>@541vnpky</strong>'],
 			</div>
 		</div>
 
-		<div class="item">
+		<div class="item" data-aos="zoom-out" data-aos-duration="750">
 			<div class="main-content" style="background:#e9e9e9;">
 				<img src="{{ asset('bemft_assets/images/logo/idd.png') }}"
 					style="max-height:143px; height 143px; width:auto" alt="IDD">
@@ -297,7 +297,7 @@ Line : <strong>@541vnpky</strong>'],
 <div class="faq-section">
 	<div class="overlay">
 		<div class="container">
-			<div class="theme-title-one">
+			<div class="theme-title-one" data-aos="fade-up">
 				<h2>FAQ</h2>
 				<p class="mb-5">Berikut adalah FAQ seputar BEM Fakultas Teknik</p>
 			</div>
@@ -315,7 +315,8 @@ Line : <strong>@541vnpky</strong>'],
 											<a class="pr-5"
 												style="font-size: 20px; font-family:Source Sans Pro, sans-serif"
 												data-toggle="collapse" data-parent="#accordion"
-												href="#collapse{{$loop->index}}">
+												href="#collapse{{$loop->index}}"
+												data-aos="fade-right">
 												{!!$faq['question']!!}
 											</a>
 										</h6>
