@@ -82,7 +82,7 @@ Line : <strong>@541vnpky</strong>'],
 @section('content')
 {{-- Banner Beranda --}}
 <div id="theme-main-banner" class="banner-one">
-	<div data-src="{{ asset('bemft_assets/images/home/1.png') }}">
+	<div data-src="{{ asset('bemft_assets/images/home/7.png') }}">
 		<div class="camera_caption">
 			<div class="container">
 				<h1 class="wow fadeInUp animated" style="color:#fff" data-wow-delay="0.2s">Selamat Datang Di <br>
@@ -100,7 +100,7 @@ Line : <strong>@541vnpky</strong>'],
 			</div>
 		</div>
 	</div>
-	<div data-src="{{ asset('bemft_assets/images/home/4.png') }}">
+	<div data-src="{{ asset('bemft_assets/images/home/6.png') }}">
 		<div class="camera_caption">
 			<div class="container">
 				<p class="wow fadeInUp animated" style="color:#f6f6f6">Kenali Ormawa Fakultas Teknik!</p>
