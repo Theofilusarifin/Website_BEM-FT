@@ -36,7 +36,7 @@
 								<div class="hover-content">
 									<div class="text clearfix">
 										<div class="float-left">
-											<h5><a href="{{ '/admin/pengumuman/delete/'.$pengumuman->slug }}">{{ $pengumuman->judul }}</a></h5>
+											<h5 style="color:white">{{ $pengumuman->judul }}</h5>
 											<p>{{ substr_replace($pengumuman->isi, "...", 100) }}</p>
 										</div>
 										<button type="button" class="details float-right" data-toggle="modal" data-target="#exampleModal{{ $pengumuman->id }}">
@@ -66,8 +66,8 @@
 											{{ $pengumuman->judul }}
 										</strong>
 										<div class="text-secondary">
-											<small>
-												{{ $pengumuman->created_at }}
+											<small>Published: 
+												{{ date("d F, Y", strtotime($pengumuman->created_at)) }}
 											</small>
 										</div>
 									</div>

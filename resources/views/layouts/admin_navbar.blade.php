@@ -24,6 +24,9 @@
                             <li class="">
                                 <a href="{{ route('galeri.show') }}">Edit Galeri</a>
                             </li>
+                            <li class="">
+                                <a href="{{ route('galeri.delete') }}">Hapus Galeri</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="{{ request()->is('admin/pengumuman') ? 'active' : '' }}{{ request()->is('admin/pengumuman/update') ? 'active' : '' }}">

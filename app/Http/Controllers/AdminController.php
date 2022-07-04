@@ -103,6 +103,22 @@ class AdminController extends Controller
         $galeri->save();
         return redirect()->route('galeri.show')->with(['success' => 'Berhasil melakukan update pada galeri']);
     }
+
+    public function galeriDeleteShow(){
+        $galeris = Galeri::latest()->paginate(9);
+        return view('admin.galeri.delete', compact('galeris'));
+    }
+
+    public function galeriDestroy($id){
+        $galeri = Galeri::find($id);
+        $link = $_POST['path'];
+        if (\File::exists(public_path($link))) {
+            \File::delete(public_path($link));
+        }
+        $galeri->delete();
+        return redirect()->route('galeri.delete')->with(['success' => 'Berhasil menghapus galeri']);
+    }
+
     public function pengumumanAddShow(){
         return view('admin.pengumuman.add');
     }

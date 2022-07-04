@@ -47,6 +47,9 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/galeri/update', 'AdminController@galeriEditShow')->name('galeri.show');
     Route::get('/galeri/update/{id}', 'AdminController@galeriEdit')->name('galeri.edit');
     Route::post('/galeri/update', 'AdminController@galeriEditUpdate')->name('galeri.update');
+    // Route Hapus Galeri
+    Route::get('/galeri/delete', 'AdminController@galeriDeleteShow')->name('galeri.delete');
+    Route::delete('/galeri/delete/{id}', 'AdminController@galeriDestroy')->name('galeri.destroy');
 
     // Route Tambah pengumuman
     Route::get('/pengumuman', 'AdminController@pengumumanAddShow')->name('admin.pengumuman.show');
