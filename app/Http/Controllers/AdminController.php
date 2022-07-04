@@ -157,4 +157,19 @@ class AdminController extends Controller
         $pengumuman->save();
         return redirect()->route('pengumuman.show')->with(['success' => 'Berhasil melakukan update pada pengumuman']);
     }
+
+    public function pengumumanDeleteShow(){
+        $pengumumans = Pengumuman::latest()->paginate(6);
+        return view('admin.pengumuman.delete', compact('pengumumans'));
+    }
+
+    public function pengumumanDestroy($id){
+        $pengumuman = Pengumuman::find($id);
+        $link = $_POST['path'];
+        if (\File::exists(public_path($link))) {
+            \File::delete(public_path($link));
+        }
+        $pengumuman->delete();
+        return redirect()->route('pengumuman.delete')->with(['success' => 'Berhasil menghapus pengumuman']);
+    }
 }

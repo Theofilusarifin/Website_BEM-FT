@@ -35,6 +35,9 @@
                             <li class="">
                                 <a href="{{ route('pengumuman.show') }}">Edit pengumuman</a>
                             </li>
+                            <li class="">
+                                <a href="{{ route('pengumuman.delete') }}">Hapus pengumuman</a>
+                            </li>
                         </ul>
                     </li>
                 </li>

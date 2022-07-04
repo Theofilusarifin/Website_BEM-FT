@@ -55,4 +55,7 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/pengumuman/update', 'AdminController@pengumumanEditShow')->name('pengumuman.show');
     Route::get('/pengumuman/update/{id}', 'AdminController@pengumumanEdit')->name('pengumuman.edit');
     Route::post('/pengumuman/update', 'AdminController@pengumumanEditUpdate')->name('pengumuman.update');
+
+    Route::get('/pengumuman/delete', 'AdminController@pengumumanDeleteShow')->name('pengumuman.delete');
+    Route::delete('/pengumuman/delete/{id}', 'AdminController@pengumumanDestroy')->name('pengumuman.destroy');
 });
