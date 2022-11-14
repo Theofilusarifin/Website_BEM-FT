@@ -1,5 +1,5 @@
 ## About This Project
-This is a laravel web-based project. I created this website with my friend (Reynard Nathanael) for BEM-FT Ubaya. BEM-FT Ubaya is an intra-campus student organization at Engineering Faculty Universitas Surabaya. This website provides daily-update information for Engineering Students such as Activity Calendar, FAQ, and Competition Information.
+This is a laravel web-based project. I created this website with my friend for BEM-FT Ubaya. BEM-FT Ubaya is an intra-campus student organization at Engineering Faculty Universitas Surabaya. This website provides daily-update information for Engineering Students such as Activity Calendar, FAQ, and Competition Information.
 
 ## Link To Site
 <a href="https://theofilusarifin.000webhostapp.com">bemftubaya.com</a>
